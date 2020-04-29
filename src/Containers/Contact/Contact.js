@@ -1,13 +1,7 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faTwitter,
-  faLinkedin,
-  faFacebookSquare,
-} from "@fortawesome/free-brands-svg-icons";
+import avatar from "../../Assets/Images/rrrr.jpg";
 
-const Home = () => {
+const Contact = () => {
   const [show, setShow] = useState(false);
 
   const toggleMenu = () => {
@@ -27,12 +21,12 @@ const Home = () => {
             <div className="portrait"></div>
           </div>
           <ul className={`menu-nav ${show ? "show" : ""}`}>
-            <li className={`nav-item current ${show ? "show" : ""}`}>
+            <li className={`nav-item  ${show ? "show" : ""}`}>
               <a href="/" className="nav-link">
                 Home
               </a>
             </li>
-            <li className={`nav-item ${show ? "show" : ""}`}>
+            <li className={`nav-item  ${show ? "show" : ""}`}>
               <a href="/about" className="nav-link">
                 About Me
               </a>
@@ -42,7 +36,7 @@ const Home = () => {
                 My Work
               </a>
             </li>
-            <li className={`nav-item ${show ? "show" : ""}`}>
+            <li className={`nav-item current ${show ? "show" : ""}`}>
               <a href="/contact" className="nav-link">
                 How to reach me
               </a>
@@ -51,36 +45,30 @@ const Home = () => {
         </nav>
       </header>
 
-      <main className="home">
+      <main className="contact">
         <h1 className="lg-heading">
-          Yazan <span className="text-secondary"> Widyan</span>
+          Contact <span className="text-secondary"> Me</span>
         </h1>
-        <h2 className="sm-heading"> Web Developer</h2>
-        <div className="icons">
-          <a href="#!">
-            <i>
-              <FontAwesomeIcon icon={faTwitter} />
-            </i>
-          </a>
-          <a href="#!">
-            <i>
-              <FontAwesomeIcon icon={faFacebookSquare} />
-            </i>
-          </a>
-          <a href="#!">
-            <i>
-              <FontAwesomeIcon icon={faLinkedin} />
-            </i>
-          </a>
-          <a href="#!">
-            <i>
-              <FontAwesomeIcon icon={faGithub} />
-            </i>
-          </a>
+        <h2 className="sm-heading"> This is how you can reach me...</h2>
+        <div className="boxes">
+          <div>
+            <span className="text-secondary"> Email:</span>
+            Yazan@test.com
+          </div>
+          <div>
+            <span className="text-secondary"> Phone:</span>
+            +962 111 111 111
+          </div>
+          <div>
+            <span className="text-secondary"> Address:</span>
+            Amman, Mecca st.
+          </div>
         </div>
       </main>
+
+      <footer className="main-footer">Copyright &copy; 2020</footer>
     </div>
   );
 };
 
-export default Home;
+export default Contact;
