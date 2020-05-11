@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import avatar from "../../Assets/Images/rrrr.jpg";
 
 const Contact = () => {
   const [show, setShow] = useState(false);

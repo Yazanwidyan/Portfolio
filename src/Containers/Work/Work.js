@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faTwitter,
-  faLinkedin,
-  faFacebookSquare,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import project1 from "../../Assets/Images/10x-featured-social-media-image-size.png";
 
 const Work = () => {
@@ -62,13 +57,13 @@ const Work = () => {
             <a href="#!">
               <img src={project1} alt="project1" />
             </a>
-            <a href="#" className="btn-light">
+            <a href="#!" className="btn-light">
               <i className="">
                 <FontAwesomeIcon icon={faTwitter} />
               </i>
               Project
             </a>
-            <a href="#" className="btn-dark">
+            <a href="#!" className="btn-dark">
               <i className="">
                 <FontAwesomeIcon icon={faGithub} />
               </i>
@@ -79,13 +74,13 @@ const Work = () => {
             <a href="#!">
               <img src={project1} alt="project1" />
             </a>
-            <a href="#" className="btn-light">
+            <a href="#!" className="btn-light">
               <i className="">
                 <FontAwesomeIcon icon={faTwitter} />
               </i>
               Project
             </a>
-            <a href="#" className="btn-dark">
+            <a href="#!" className="btn-dark">
               <i className="">
                 <FontAwesomeIcon icon={faGithub} />
               </i>
@@ -96,13 +91,13 @@ const Work = () => {
             <a href="#!">
               <img src={project1} alt="project1" />
             </a>
-            <a href="#" className="btn-light">
+            <a href="#!" className="btn-light">
               <i className="">
                 <FontAwesomeIcon icon={faTwitter} />
               </i>
               Project
             </a>
-            <a href="#" className="btn-dark">
+            <a href="#!" className="btn-dark">
               <i className="">
                 <FontAwesomeIcon icon={faGithub} />
               </i>
@@ -113,13 +108,13 @@ const Work = () => {
             <a href="#!">
               <img src={project1} alt="project1" />
             </a>
-            <a href="#" className="btn-light">
+            <a href="#!" className="btn-light">
               <i className="">
                 <FontAwesomeIcon icon={faTwitter} />
               </i>
               Project
             </a>
-            <a href="#" className="btn-dark">
+            <a href="#!" className="btn-dark">
               <i className="">
                 <FontAwesomeIcon icon={faGithub} />
               </i>
@@ -130,13 +125,13 @@ const Work = () => {
             <a href="#!">
               <img src={project1} alt="project1" />
             </a>
-            <a href="#" className="btn-light">
+            <a href="#!" className="btn-light">
               <i className="">
                 <FontAwesomeIcon icon={faTwitter} />
               </i>
               Project
             </a>
-            <a href="#" className="btn-dark">
+            <a href="#!" className="btn-dark">
               <i className="">
                 <FontAwesomeIcon icon={faGithub} />
               </i>
