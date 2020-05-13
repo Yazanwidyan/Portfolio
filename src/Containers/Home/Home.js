@@ -34,7 +34,7 @@ const Home = () => {
 
   const handleScroll = () => {
     const currentPos = window.pageYOffset;
-    const visible = scrollPos < 100;
+    const visible = scrollPos < 150;
 
     setScroll(currentPos);
     setVisible(visible);
@@ -49,12 +49,14 @@ const Home = () => {
               <a href="!#">Case Studies</a>
             </li>
             <li>
-              <a href="!#">Experiments</a>
+              <a onClick={handleContactOpen} href>
+                Skills
+              </a>
             </li>
             <li>
-              <div onClick={handleContactOpen} href="!#">
+              <a onClick={handleContactOpen} href>
                 Contact
-              </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -68,8 +70,8 @@ const Home = () => {
             <h1 className="lg-heading">Yazan Widyan</h1>
             <h3 className="sm-heading"> Interactive Front-end Developer </h3>
 
-            <button className="the-button">
-              <span className="button-text">About Me </span>
+            <button className="the-button" onClick={handleContactOpen}>
+              <span className="button-text">About Me</span>
             </button>
 
             <ul className="icons">
@@ -105,20 +107,59 @@ const Home = () => {
       <div className="main">
         <div className={open ? "is-open" : ""}>
           <div className="contact-about">
-            <div className="half-contact is-contact"></div>
-            <div className="contact-info">
-              <h3>About Me</h3>
+            <div className="half-contact is-contact">
+              <div className="giga-text" style={{ right: "-2vh" }}>
+                Skills
+              </div>
+
+              <div className="skills-container">
+                <ul>
+                  <li className="html"> HTML</li>
+                  <li className="css"> CSS</li>
+                  <li className="javascript"> JAVASCRIPT</li>
+                  <li className="react"> REACT</li>
+                  <li className="redux"> REDUX</li>
+                </ul>
+              </div>
+
+              <div className="contact-info">
+                <div className="close-contact" onClick={handleContactOpen}>
+                  X
+                </div>
+              </div>
             </div>
             <div className="half-contact is-about">
+              <div className="giga-text">About</div>
               <div className="contact-info">
                 <h3 className="about-me-title">About Me</h3>
                 <h4>Interactive Front-end developer.</h4>
                 <p className="about-me-text">
-                  I'm Riccardo Zanutta, a 22-year-old Italian
-                  <strong>Freelance Front-end developer</strong>. I'm a weird
-                  guy who likes making weird things with web technologies.
+                  I'm Yazan Widyan, a 26-year-old Jordanian
+                  <strong> Freelance Front-end developer</strong>. I'm a guy who
+                  likes making weird things with web technologies.
                   <br /> I like to <strong>Resolve</strong> design problems,
                 </p>
+
+                <div className="boxes">
+                  <div>
+                    <span className="text-secondary"> Email: </span>
+                    yazanwidyan07@gmail.com
+                  </div>
+                  <div>
+                    <span className="text-secondary"> Phone: </span>
+                    +962 79 538 21 71
+                  </div>
+                  <div>
+                    <span className="text-secondary"> Address: </span>
+                    Amman, Mecca st.
+                  </div>
+                </div>
+                <div
+                  className="giga-text"
+                  style={{ top: "43vh", left: "-15vh", zIndex: "-1" }}
+                >
+                  Contact
+                </div>
               </div>
             </div>
           </div>
@@ -128,13 +169,34 @@ const Home = () => {
             <h4 className="work-title">case studies </h4>
             <h2 className="work-subtitle"> Latest Works </h2>
             <ul className="work-list">
-              <li>
+              <li style={{ margin: " 0px -30px 160px 30px" }}>
                 <a id="project1" href="!#" className="project">
                   <div className="project-mask"> </div>
                   <div className="project-mask-number">
                     <div className="project-mask-back"> 01 </div>
                     <div className="project-mask-front">
                       <div className="project-mask-front-overlay"> 01 </div>
+                    </div>
+                  </div>
+                  <div className="work-text-section">
+                    <div className="project-title"> Project Title </div>
+                    <div className="project-subtitle"> Project Subtitle </div>
+                    <button className="the-button">
+                      <span className="button-text">case study </span>
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li style={{ margin: " 0px 30px 160px -30px" }}>
+                <a id="project1" href="!#" className="project">
+                  <div className="project-mask"> </div>
+                  <div
+                    className="project-mask-number"
+                    style={{ top: "-124px", left: "-51px" }}
+                  >
+                    <div className="project-mask-back"> 02 </div>
+                    <div className="project-mask-front">
+                      <div className="project-mask-front-overlay"> 02 </div>
                     </div>
                   </div>
                   <div className="work-text-section">
