@@ -63,15 +63,27 @@ const Home = () => {
       </nav>
 
       <header className="main-hero">
-        <Card />
-
         <div className="main-hero-text">
           <div className="content">
-            <h1 className="lg-heading">Yazan Widyan</h1>
+            <div className="hero-name">
+              <h1 className="lg-head">Y</h1>
+              <h1 className="lg-head">a</h1>
+              <h1 className="lg-head">z</h1>
+              <h1 className="lg-head">a</h1>
+              <h1 className="lg-head">n</h1>
+              <h1 className="lg-head">W</h1>
+              <h1 className="lg-head">i</h1>
+              <h1 className="lg-head">d</h1>
+              <h1 className="lg-head">y</h1>
+              <h1 className="lg-head">a</h1>
+              <h1 className="lg-head">n</h1>
+            </div>
             <h3 className="sm-heading"> Interactive Front-end Developer </h3>
 
             <button className="the-button" onClick={handleContactOpen}>
               <span className="button-text">About Me</span>
+              <div className="button-mask"></div>
+              <span className=" button-icon"></span>
             </button>
 
             <ul className="icons">
@@ -98,6 +110,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
+        <Card />
 
         <a href="#!" className="go-next-works">
           <div>Works</div>
@@ -105,6 +118,58 @@ const Home = () => {
         </a>
       </header>
       <div className="main">
+        <div className="work-section">
+          <div className="content">
+            <h4 className="work-title">case studies </h4>
+            <h2 className="work-subtitle"> Latest Works </h2>
+            <ul className="work-list">
+              <li className="project1-li">
+                <a id="project1" href="!#" className="project">
+                  <div className="project-mask"> </div>
+                  <div className="project-mask-number">
+                    <div className="project-mask-back"> 01 </div>
+                    <div className="project-mask-front">
+                      <div className="project-mask-front-overlay"> 01 </div>
+                    </div>
+                  </div>
+                  <div className="work-text-section">
+                    <div className="project-title"> Project Title </div>
+                    <div className="project-subtitle"> Project Subtitle </div>
+                    <button className="the-button">
+                      <span className="button-text">case study </span>
+                      <span className=" button-icon"></span>
+                      <div className="button-mask"></div>
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li className="project2-li">
+                <a id="project1" href="!#" className="project">
+                  <div className="project-mask"> </div>
+                  <div
+                    className="project-mask-number"
+                    style={{ top: "-124px", left: "-51px" }}
+                  >
+                    <div className="project-mask-back"> 02 </div>
+                    <div className="project-mask-front">
+                      <div className="project-mask-front-overlay"> 02 </div>
+                    </div>
+                  </div>
+                  <div className="work-text-section">
+                    <div className="project-title"> Project Title </div>
+                    <div className="project-subtitle"> Project Subtitle </div>
+                    <button className="the-button">
+                      <span className="button-text">case study </span>
+                      <span className=" button-icon"></span>
+                      <div className="button-mask"></div>
+                    </button>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div className={open ? "is-open" : ""}>
           <div className="contact-about">
             <div className="half-contact is-contact">
@@ -124,7 +189,8 @@ const Home = () => {
 
               <div className="contact-info">
                 <div className="close-contact" onClick={handleContactOpen}>
-                  X
+                  <span></span>
+                  <span></span>
                 </div>
               </div>
             </div>
@@ -162,53 +228,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="work-section">
-          <div className="content">
-            <h4 className="work-title">case studies </h4>
-            <h2 className="work-subtitle"> Latest Works </h2>
-            <ul className="work-list">
-              <li style={{ margin: " 0px -30px 160px 30px" }}>
-                <a id="project1" href="!#" className="project">
-                  <div className="project-mask"> </div>
-                  <div className="project-mask-number">
-                    <div className="project-mask-back"> 01 </div>
-                    <div className="project-mask-front">
-                      <div className="project-mask-front-overlay"> 01 </div>
-                    </div>
-                  </div>
-                  <div className="work-text-section">
-                    <div className="project-title"> Project Title </div>
-                    <div className="project-subtitle"> Project Subtitle </div>
-                    <button className="the-button">
-                      <span className="button-text">case study </span>
-                    </button>
-                  </div>
-                </a>
-              </li>
-              <li style={{ margin: " 0px 30px 160px -30px" }}>
-                <a id="project1" href="!#" className="project">
-                  <div className="project-mask"> </div>
-                  <div
-                    className="project-mask-number"
-                    style={{ top: "-124px", left: "-51px" }}
-                  >
-                    <div className="project-mask-back"> 02 </div>
-                    <div className="project-mask-front">
-                      <div className="project-mask-front-overlay"> 02 </div>
-                    </div>
-                  </div>
-                  <div className="work-text-section">
-                    <div className="project-title"> Project Title </div>
-                    <div className="project-subtitle"> Project Subtitle </div>
-                    <button className="the-button">
-                      <span className="button-text">case study </span>
-                    </button>
-                  </div>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

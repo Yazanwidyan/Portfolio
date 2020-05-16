@@ -1,99 +1,167 @@
 @include mediaXl {
-    .projects {
-        grid-template-columns: repeat(4, 1fr);
+    .lg-heading {
+
+        font-size: 2.997584em;
+
     }
+
+
+    .work-section .work-list .project-mask-number {
+        right: 0 !important;
+    }
+
+
+
+
+    li {
+        margin: auto;
+
+
+        .project {
+            width: 95% !important;
+            height: 290px !important;
+
+            .work-text-section {
+                left: 40px !important;
+                bottom: 50px !important;
+
+                .project-title {
+                    font-size: 1.125em !important;
+
+                }
+            }
+        }
+
+    }
+
+
+    .main-nav .nav-content {
+        width: 842px !important;
+    }
+
+    .footer .content {
+        width: 95% !important;
+
+
+        .footer-copy {
+            margin-left: unset !important;
+        }
+
+        .inner-container .footer-links {
+            margin: 0 0 0 50px !important;
+        }
+    }
+
 }
 
 @include mediaLg {
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
-@include mediaMd {
 
-    main {
-        align-items: center;
-        text-align: center;
+    .lg-heading {
 
-        .lg-heading {
-            line-height: 1;
-            margin-bottom: 1rem;
-        }
+        font-size: 2.997584em;
+
     }
 
-    .home {
-        align-items: center;
-        text-align: center;
 
-        .lg-heading {
-            line-height: 1;
-            margin-bottom: 1rem;
-        }
+    .work-section .content .work-list .project1-li {
+        margin: 0 !important;
+    }
 
 
-        .work-section {
+    .project {
+        width: 95% !important;
+        height: 290px !important;
 
-            .content {
-                width: 500px;
+        .work-text-section {
+            left: 40px !important;
+            bottom: 50px !important;
+
+            .project-title {
+                font-size: 1.125em !important;
+
             }
         }
     }
 
-    ul.menu-nav,
-    div.menu-branding {
-        float: none;
-        width: 100%;
-        min-height: 0;
 
-        &.show {
-            transform: translate3d(0, 0, 0)
+
+    .footer .content {
+        width: 95% !important;
+
+
+        .footer-copy {
+            margin-left: unset !important;
+        }
+
+        .inner-container .footer-links {
+            margin: 0 0 0 50px !important;
         }
     }
 
-    .menu-nav {
-        height: 75vh;
-        transform: translate3d(-100%, 0, 0);
-        font-size: 24px;
+}
+
+@include mediaMd {
+    .lg-heading {
+
+        font-size: 2.997584em;
+
     }
 
-    .menu-branding {
-        height: 25vh;
-        transform: translate3d(100%, 0, 0);
+    .page-wrap .main-hero .main-hero-text .icons {
+        visibility: hidden;
+    }
 
-        .portrait {
-            width: 150px;
-            height: 150px;
+    .work-section .work-list .project-mask-number {
+        right: auto !important;
+    }
+
+
+    .work-section .content .work-list .project1-li,
+    .project2-li {
+        margin: 0px 0px 100px 0px !important;
+    }
+
+    li {
+        margin: auto;
+
+
+        .project {
+            width: 95% !important;
+            height: 290px !important;
+
+            .work-text-section {
+                left: 40px !important;
+                bottom: 50px !important;
+
+                .project-title {
+                    font-size: 1.125em !important;
+
+                }
+            }
+        }
+
+    }
+
+
+    .main-nav .nav-content {
+        visibility: hidden !important;
+    }
+
+    .footer .content {
+        width: 95% !important;
+
+
+        .footer-copy {
+            margin-left: unset !important;
+        }
+
+        .inner-container .footer-links {
+            margin: 0 0 0 50px !important;
         }
     }
 
 
-    .about-info {
-        grid-template-areas:
-            'bioimage'
-            'bio'
-            'job1'
-            'job2'
-            'job3';
-
-        grid-template-columns: 1fr;
-    }
-
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
-@include mediaSm {
-    main.home h1 {
-        margin-top: 10vh !important;
-    }
-
-    .home h1 {
-        margin-top: 10vh !important;
-    }
-
-    .projects {
-        grid-template-columns: 1fr;
-    }
-}
+@include mediaSm {}
