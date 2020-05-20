@@ -7,11 +7,15 @@ import {
   faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import Card from "../../Components/Parallax/Parallax";
+import arrow from "../../Assets/Images/Untitled-1.png";
+import logo from "../../Assets/Images/ddd.png";
+// import logo2 from "../../Assets/Images/Logo.png";
 
 const Home = () => {
   const [scrollPos, setScroll] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
   const [open, setOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -25,10 +29,20 @@ const Home = () => {
 
   const handleContactOpen = () => {
     setOpen(!open);
+
     if (!open) {
       document.body.classList.add("is-open");
     } else {
       document.body.classList.remove("is-open");
+    }
+  };
+
+  const handleMobileOpen = () => {
+    setMobileOpen(!mobileOpen);
+    if (!mobileOpen) {
+      document.body.classList.add("is-mobile-open");
+    } else {
+      document.body.classList.remove("is-mobile-open");
     }
   };
 
@@ -44,9 +58,17 @@ const Home = () => {
     <div className="page-wrap">
       <nav className={visible ? "main-nav" : "main-nav scrolled"}>
         <div className="nav-content">
+          <a href>{/* <img className="logo" src={logo2} alt=""></img> */}</a>
+          <div className="nav-toggle" onClick={handleMobileOpen}>
+            <span className="menu-trigger">
+              <i className="menu-trigger-bar top"></i>
+              <i className="menu-trigger-bar middle"></i>
+              <i className="menu-trigger-bar bottom"></i>
+            </span>
+          </div>
           <ul className="nav-links">
             <li>
-              <a href="!#">Case Studies</a>
+              <a href="!#">Projects</a>
             </li>
             <li>
               <a onClick={handleContactOpen} href>
@@ -60,6 +82,30 @@ const Home = () => {
             </li>
           </ul>
         </div>
+      </nav>
+      <nav className="mobile-menu">
+        <span className="close-trigger" onClick={handleMobileOpen}>
+          <i className="close-trigger-bar left"></i>
+          <i className="close-trigger-bar right"></i>
+        </span>
+        <ul className="mobile-nav-links">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href onClick={handleContactOpen}>
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href>Work</a>
+          </li>
+          <li>
+            <a href onClick={handleContactOpen}>
+              Contact{" "}
+            </a>
+          </li>
+        </ul>
       </nav>
 
       <header className="main-hero">
@@ -83,7 +129,9 @@ const Home = () => {
             <button className="the-button" onClick={handleContactOpen}>
               <span className="button-text">About Me</span>
               <div className="button-mask"></div>
-              <span className=" button-icon"></span>
+              <span className=" button-icon">
+                <img className="arrow-logo" src={arrow} alt=""></img>
+              </span>
             </button>
 
             <ul className="icons">
@@ -110,6 +158,17 @@ const Home = () => {
             </ul>
           </div>
         </div>
+        <img
+          style={{
+            position: "absolute",
+            top: "28%",
+            left: "43%",
+            width: "20vh",
+            opacity: ".7",
+          }}
+          src={logo}
+          alt=""
+        ></img>
         <Card />
 
         <a href="#!" className="go-next-works">
@@ -120,47 +179,58 @@ const Home = () => {
       <div className="main">
         <div className="work-section">
           <div className="content">
-            <h4 className="work-title">case studies </h4>
+            <h4 className="work-title">CASE STUDIES </h4>
             <h2 className="work-subtitle"> Latest Works </h2>
             <ul className="work-list">
               <li className="project1-li">
                 <a id="project1" href="!#" className="project">
                   <div className="project-mask"> </div>
-                  <div className="project-mask-number">
+                  <div id="project-number-1" className="project-mask-number">
                     <div className="project-mask-back"> 01 </div>
                     <div className="project-mask-front">
-                      <div className="project-mask-front-overlay"> 01 </div>
+                      <div data-index="01" className="project-mask-overlay">
+                        01
+                      </div>
                     </div>
                   </div>
                   <div className="work-text-section">
-                    <div className="project-title"> Project Title </div>
-                    <div className="project-subtitle"> Project Subtitle </div>
+                    <div className="project-title"> Layls Website </div>
+                    <div className="project-subtitle">
+                      {" "}
+                      Dresses and Clothes Website{" "}
+                    </div>
                     <button className="the-button">
-                      <span className="button-text">case study </span>
-                      <span className=" button-icon"></span>
+                      <span className="button-text">View More </span>
+                      <span className=" button-icon">
+                        <img className="arrow-logo" src={arrow} alt=""></img>
+                      </span>
                       <div className="button-mask"></div>
                     </button>
                   </div>
                 </a>
               </li>
               <li className="project2-li">
-                <a id="project1" href="!#" className="project">
+                <a id="project2" href="!#" className="project">
                   <div className="project-mask"> </div>
-                  <div
-                    className="project-mask-number"
-                    style={{ top: "-124px", left: "-51px" }}
-                  >
+                  <div id="project-number-2" className="project-mask-number">
                     <div className="project-mask-back"> 02 </div>
                     <div className="project-mask-front">
-                      <div className="project-mask-front-overlay"> 02 </div>
+                      <div data-index="02" className="project-mask-overlay">
+                        01
+                      </div>
                     </div>
                   </div>
                   <div className="work-text-section">
-                    <div className="project-title"> Project Title </div>
-                    <div className="project-subtitle"> Project Subtitle </div>
+                    <div className="project-title"> Duplicat Nike Website </div>
+                    <div className="project-subtitle">
+                      {" "}
+                      Amazing Multifunctioning Website{" "}
+                    </div>
                     <button className="the-button">
-                      <span className="button-text">case study </span>
-                      <span className=" button-icon"></span>
+                      <span className="button-text">View More</span>
+                      <span className=" button-icon">
+                        <img className="arrow-logo" src={arrow} alt=""></img>
+                      </span>
                       <div className="button-mask"></div>
                     </button>
                   </div>
