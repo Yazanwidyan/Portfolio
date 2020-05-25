@@ -111,28 +111,34 @@ const Home = () => {
       <header className="main-hero">
         <div className="main-hero-text">
           <div className="content">
-            <div className="hero-name">
-              <h1 className="lg-head">Y</h1>
-              <h1 className="lg-head">a</h1>
-              <h1 className="lg-head">z</h1>
-              <h1 className="lg-head">a</h1>
-              <h1 className="lg-head">n</h1>
-              <h1 className="lg-head">W</h1>
-              <h1 className="lg-head">i</h1>
-              <h1 className="lg-head">d</h1>
-              <h1 className="lg-head">y</h1>
-              <h1 className="lg-head">a</h1>
-              <h1 className="lg-head">n</h1>
+            <div className="text-loading-mask">
+              <div className="hero-name">
+                <h1 className="lg-head">Y</h1>
+                <h1 className="lg-head">a</h1>
+                <h1 className="lg-head">z</h1>
+                <h1 className="lg-head">a</h1>
+                <h1 className="lg-head">n</h1>
+                <h1 className="lg-head">W</h1>
+                <h1 className="lg-head">i</h1>
+                <h1 className="lg-head">d</h1>
+                <h1 className="lg-head">y</h1>
+                <h1 className="lg-head">a</h1>
+                <h1 className="lg-head">n</h1>
+              </div>
             </div>
-            <h3 className="sm-heading"> Interactive Front-end Developer </h3>
+            <div className="text-loading-mask-2">
+              <h3 className="sm-heading"> Interactive Front-end Developer </h3>
+            </div>
 
-            <button className="the-button" onClick={handleContactOpen}>
-              <span className="button-text">About Me</span>
-              <div className="button-mask"></div>
-              <span className=" button-icon">
-                <img className="arrow-logo" src={arrow} alt=""></img>
-              </span>
-            </button>
+            <div className="text-loading-mask-3">
+              <button className="the-button" onClick={handleContactOpen}>
+                <span className="button-text">About Me</span>
+                <div className="button-mask"></div>
+                <span className=" button-icon">
+                  <img className="arrow-logo" src={arrow} alt=""></img>
+                </span>
+              </button>
+            </div>
 
             <ul className="icons">
               <li>
