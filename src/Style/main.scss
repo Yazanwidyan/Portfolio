@@ -828,6 +828,7 @@ body {
       overflow: hidden;
       transition: all .2s ease;
       width: 13rem;
+
     }
 
     .icons {
@@ -858,6 +859,7 @@ body {
     }
 
     .the-button {
+
       font-size: 1.1em;
       letter-spacing: 3px;
       padding: 12px 20px !important;
@@ -875,6 +877,10 @@ body {
       border: 0;
       white-space: nowrap;
       position: relative;
+
+      &:focus {
+        outline: none;
+      }
 
 
       &::after {
@@ -980,6 +986,7 @@ body {
   }
 
   .go-next-works {
+    cursor: pointer;
     position: absolute;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -1365,7 +1372,6 @@ main {
             }
 
             .the-button {
-              font-size: 0.875em;
               letter-spacing: 3px;
               padding: 12px 20px !important;
               background: linear-gradient(270deg, #f06449, #ef3636);

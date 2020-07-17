@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
-  faTwitter,
   faLinkedin,
   faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
@@ -46,6 +45,11 @@ const Home = () => {
     }
   };
 
+  const scrollDownHandler = () => {
+    const element = document.getElementById("main1");
+    element.scrollIntoView({ behavior: "smooth" });
+  };
+
   const handleScroll = () => {
     const currentPos = window.pageYOffset;
     const visible = scrollPos < 150;
@@ -68,7 +72,9 @@ const Home = () => {
           </div>
           <ul className="nav-links">
             <li>
-              <a href="!#">Projects</a>
+              <a onClick={scrollDownHandler} href>
+                Projects
+              </a>
             </li>
             <li>
               <a onClick={handleContactOpen} href>
@@ -142,22 +148,17 @@ const Home = () => {
 
             <ul className="icons">
               <li>
-                <a href="#!">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
-              <li>
-                <a href="#!">
+                <a href="https://www.facebook.com/yazan.widyan/">
                   <FontAwesomeIcon icon={faFacebookSquare} />
                 </a>
               </li>
               <li>
-                <a href="#!">
+                <a href="https://www.linkedin.com/in/yazan-widyan-863305157/">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
               <li>
-                <a href="#!">
+                <a href="https://github.com/Yazanwidyan">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </li>
@@ -177,19 +178,19 @@ const Home = () => {
         ></img>
         <Card />
 
-        <a href="#!" className="go-next-works">
+        <div onClick={scrollDownHandler} className="go-next-works">
           <div>Works</div>
           <span className="the-arrow"></span>
-        </a>
+        </div>
       </header>
-      <div className="main">
+      <div className="main" id="main1">
         <div className="work-section">
           <div className="content">
             <h4 className="work-title">CASE STUDIES </h4>
             <h2 className="work-subtitle"> Latest Works </h2>
             <ul className="work-list">
               <li className="project1-li">
-                <a id="project1" href="!#" className="project">
+                <a id="project1" href="https://layls.com/" className="project">
                   <div className="project-mask"> </div>
                   <div id="project-number-1" className="project-mask-number">
                     <div className="project-mask-back"> 01 </div>
@@ -202,7 +203,6 @@ const Home = () => {
                   <div className="work-text-section">
                     <div className="project-title"> Layls Website </div>
                     <div className="project-subtitle">
-                      {" "}
                       Dresses and Clothes Website{" "}
                     </div>
                     <button className="the-button">
@@ -216,7 +216,7 @@ const Home = () => {
                 </a>
               </li>
               <li className="project2-li">
-                <a id="project2" href="!#" className="project">
+                <a id="project2" href="#!" className="project">
                   <div className="project-mask"> </div>
                   <div id="project-number-2" className="project-mask-number">
                     <div className="project-mask-back"> 02 </div>
@@ -274,12 +274,14 @@ const Home = () => {
               <div className="giga-text">About</div>
               <div className="contact-info">
                 <h3 className="about-me-title">About Me</h3>
-                <h4>Interactive Front-end developer.</h4>
+                <h4>Full-stack web developer.</h4>
                 <p className="about-me-text">
-                  I'm Yazan Widyan, a 26-year-old Jordanian
-                  <strong> Freelance Front-end developer</strong>. I'm a guy who
-                  likes making weird things with web technologies.
-                  <br /> I like to <strong>Resolve</strong> design problems,
+                  I'm Yazan Widyan, a 26-year-old a Highly motivated,
+                  self-starting <strong>full-stack web developer</strong>{" "}
+                  seeking to launch a career building web applications and
+                  services familiar with development and deployment proccess
+                  <br />
+                  and I like to <strong>Resolve</strong> design problems,
                 </p>
 
                 <div className="boxes">
@@ -313,16 +315,15 @@ const Home = () => {
           <div className="inner-container">
             <ul className="footer-links">
               <li>
-                <a href="!#">Twitter</a>
+                <a href="https://www.linkedin.com/in/yazan-widyan-863305157/">
+                  Linkedin
+                </a>
               </li>
               <li>
-                <a href="!#">Linkedin</a>
+                <a href="https://github.com/Yazanwidyan">Github</a>
               </li>
               <li>
-                <a href="!#">Github</a>
-              </li>
-              <li>
-                <a href="!#">Facebook</a>
+                <a href="https://www.facebook.com/yazan.widyan/">Facebook</a>
               </li>
             </ul>
           </div>
