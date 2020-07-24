@@ -68,7 +68,6 @@ body {
   }
 }
 
-
 .hero-name {
   display: flex;
   justify-content: space-evenly;
@@ -85,11 +84,9 @@ body {
     top: 0;
     left: 0;
     transform: translateX(-105%);
-    animation: slide .65s cubic-bezier(.694, .048, .335, 1), -webkit-transform .65s cubic-bezier(.694, .048, .335, 1);
+    animation: slide 0.65s cubic-bezier(0.694, 0.048, 0.335, 1),
+      -webkit-transform 0.65s cubic-bezier(0.694, 0.048, 0.335, 1);
     animation-delay: 1.8s;
-
-
-
   }
 
   .lg-head {
@@ -173,7 +170,6 @@ body {
   width: 295px;
   position: relative;
 
-
   &::after {
     content: "";
     position: absolute;
@@ -183,9 +179,9 @@ body {
     top: 0;
     left: 0;
     transform: translateX(-110%);
-    animation: slide .65s cubic-bezier(.694, .048, .335, 1), -webkit-transform .65s cubic-bezier(.694, .048, .335, 1);
+    animation: slide 0.65s cubic-bezier(0.694, 0.048, 0.335, 1),
+      -webkit-transform 0.65s cubic-bezier(0.694, 0.048, 0.335, 1);
     animation-delay: 1.8s;
-
   }
 }
 
@@ -374,61 +370,108 @@ body {
 
       .skills-container {
         width: 500px;
-        margin: 50px auto 0;
+        margin: 86px auto 0;
         padding: 20px;
 
-        li {
+        ul {
           position: relative;
-          list-style: none;
-          margin: 50px 0;
-          font-weight: 500;
-          text-transform: uppercase;
-          color: white;
-        }
 
-        li:before {
-          content: "";
-          position: absolute;
-          top: calc(100% + 10px);
-          left: 0;
-          width: 100%;
-          height: 15px;
-          background-color: rgba(54, 126, 223, 0.5);
-          border-radius: 1000px;
-        }
+          li {
+            position: absolute;
+            list-style: none;
+            color: #cbe0e4;
+          }
 
-        li:after {
-          content: "";
-          position: absolute;
-          top: calc(100% + 10px);
-          left: 0;
-          width: 0;
-          height: 15px;
-          background-color: rgba(54, 126, 223, 1);
-          border-radius: 1000px;
-          animation-duration: 0.7s;
-          animation-timing-function: ease;
-          animation-fill-mode: forwards;
-        }
+          .html {
+            font-size: 30px;
+            top: 45px;
+          }
 
-        li.html:after {
-          width: 90%;
-        }
+          .css {
+            font-size: 32px;
+            top: 20px;
+            left: 8em;
+          }
 
-        li.css:after {
-          width: 90%;
-        }
+          .javascript {
+            font-size: 28px;
+            left: 9em;
+            top: 5em;
+          }
 
-        li.javascript:after {
-          width: 80%;
-        }
+          .typescript {
+            font-size: 23px;
+            left: 4em;
+            top: 5em;
+            opacity: 0.9;
+          }
 
-        li.react:after {
-          width: 80%;
-        }
+          .react {
+            font-size: 30px;
+            top: 6em;
+          }
 
-        li.redux:after {
-          width: 70%;
+          .redux {
+            font-size: 20px;
+            right: 55px;
+            opacity: 0.8;
+          }
+
+          .react-hooks {
+            font-size: 20px;
+            top: 13em;
+            left: 5em;
+          }
+
+          .nodejs {
+            font-size: 25px;
+            top: 8em;
+            left: 9em;
+          }
+
+          .nestjs {
+            font-size: 16px;
+            top: 15em;
+            left: 21em;
+            opacity: 0.5;
+          }
+
+          .mongodb {
+            left: 135px;
+            opacity: 0.6;
+            font-size: 20px;
+            top: -23px;
+          }
+
+          .es6 {
+            top: 71px;
+            left: 10em;
+            font-size: 16px;
+          }
+
+          .restful {
+            top: 4em;
+            opacity: 0.8;
+            left: 16em;
+            font-size: 20px;
+          }
+
+          .bootstrap {
+            top: 19em;
+            left: 240px;
+            opacity: 0.7;
+          }
+
+          .git {
+            right: 73px;
+            top: 12em;
+          }
+
+          .sass {
+            top: 18rem;
+            right: 7rem;
+            font-size: 19px;
+          }
         }
       }
     }
@@ -471,7 +514,7 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    background: #252A60;
+    background: #252a60;
     z-index: 501;
     animation: slide 1s ease-in-out;
     transform: translateX(-100%);
@@ -806,7 +849,7 @@ body {
       padding-left: 21px;
       padding-right: 52px;
       overflow: hidden;
-      transition: all .2s ease;
+      transition: all 0.2s ease;
       width: 34rem;
     }
 
@@ -816,7 +859,7 @@ body {
       padding-left: 21px;
       padding-right: 52px;
       overflow: hidden;
-      transition: all .2s ease;
+      transition: all 0.2s ease;
       width: 20rem;
     }
 
@@ -826,9 +869,8 @@ body {
       padding-left: 21px;
       padding-right: 52px;
       overflow: hidden;
-      transition: all .2s ease;
+      transition: all 0.2s ease;
       width: 13rem;
-
     }
 
     .icons {
@@ -859,7 +901,6 @@ body {
     }
 
     .the-button {
-
       font-size: 1.1em;
       letter-spacing: 3px;
       padding: 12px 20px !important;
@@ -882,7 +923,6 @@ body {
         outline: none;
       }
 
-
       &::after {
         content: "";
         position: absolute;
@@ -892,9 +932,9 @@ body {
         top: 0;
         left: 0;
         transform: translateX(-110%);
-        animation: slide .65s cubic-bezier(.694, .048, .335, 1), -webkit-transform .65s cubic-bezier(.694, .048, .335, 1);
+        animation: slide 0.65s cubic-bezier(0.694, 0.048, 0.335, 1),
+          -webkit-transform 0.65s cubic-bezier(0.694, 0.048, 0.335, 1);
         animation-delay: 1.8s;
-
       }
 
       .button-text {
@@ -1587,5 +1627,245 @@ main {
   padding: 1rem;
   background: darken($primary-color, 10);
 }
+
+.projects-header {
+  color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-size: cover !important;
+  background: url(../Assets/Images/taylor-swift-singer-qhd-2560x1440.jpg) no-repeat center center;
+}
+
+.projects-header::before {
+
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(68, 68, 68, 0.4);
+
+}
+
+
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  .projects-title {
+
+    font-size: 4.997584em;
+    line-height: .9380665066;
+    font-weight: bold;
+
+  }
+
+  .projects-subtitle {
+    padding-top: 10px;
+    font-size: 1.500em;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+}
+
+.projects-details {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 45px;
+  color: #fff;
+  z-index: 3;
+  justify-content: space-around;
+}
+
+.projects-description {
+  display: flex;
+  color: white;
+  padding: 70px 0 100px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(3, 3, 22);
+}
+
+.desc-title {
+  font-size: 60px;
+  padding: 30px;
+
+}
+
+.projects-desc {
+  font-size: 20px;
+  width: 50%;
+  padding-bottom: 32px;
+
+}
+
+.visit-website-button {
+  padding: 37px;
+
+}
+
+.next-projects {
+  padding: 45px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transition: all .5s ease-out;
+
+
+  &:hover {
+    transition: all .5s ease-out;
+    background-color: yellowgreen;
+  }
+}
+
+
+.next-work-title {
+  color: white;
+}
+
+.next-work {
+  font-size: 45px;
+  position: relative;
+}
+
+.blue-color {
+  color: #37A5EB;
+}
+
+.project-role {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+}
+
+.project-context {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+}
+
+.project-period {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+}
+
+.next-arrow {
+  width: 90px;
+  color: black;
+  right: 165px;
+  top: 18px;
+  position: absolute;
+}
+
+
+
+
+
+.the-button {
+  font-size: 1.1em;
+  letter-spacing: 3px;
+  padding: 12px 20px !important;
+  background: $secondary-color;
+  color: white;
+  position: relative;
+  transition: all 0.3s;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  touch-action: manipulation;
+  border: 0;
+  white-space: nowrap;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+
+
+  .button-text {
+    position: relative;
+    z-index: 10;
+    font-family: "spartan";
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+
+  .button-icon {
+    position: absolute;
+    top: -8px;
+    right: -25px;
+    width: 35px;
+    height: 35px;
+    font-size: 39px;
+    transform: translateX(2px);
+    transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1),
+      -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+
+    .arrow-logo {
+      width: 35px;
+    }
+  }
+
+  .button-mask {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .button-mask::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-110%);
+    width: 100%;
+    background: $third-color;
+
+    transition: -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.02s;
+    transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+    transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s,
+      -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+    z-index: 1;
+    will-change: transform;
+  }
+}
+
+.the-button:hover .button-mask::before {
+  transform: translateX(101%);
+  background: $third-color;
+}
+
+.the-button:hover .button-icon {
+  transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1),
+    -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transform: translateX(8px);
+}
+
+
 
 @import "mobile";

@@ -8,6 +8,7 @@ import {
 import Card from "../../Components/Parallax/Parallax";
 import arrow from "../../Assets/Images/Untitled-1.png";
 import logo from "../../Assets/Images/ddd.png";
+import { Link } from "react-router-dom";
 // import logo2 from "../../Assets/Images/Logo.png";
 
 const Home = () => {
@@ -62,7 +63,6 @@ const Home = () => {
     <div className="page-wrap">
       <nav className={visible ? "main-nav" : "main-nav scrolled"}>
         <div className="nav-content">
-          <a href>{/* <img className="logo" src={logo2} alt=""></img> */}</a>
           <div className="nav-toggle" onClick={handleMobileOpen}>
             <span className="menu-trigger">
               <i className="menu-trigger-bar top"></i>
@@ -190,7 +190,7 @@ const Home = () => {
             <h2 className="work-subtitle"> Latest Works </h2>
             <ul className="work-list">
               <li className="project1-li">
-                <a id="project1" href="https://layls.com/" className="project">
+                <Link id="project1" to="/layls" className="project">
                   <div className="project-mask"> </div>
                   <div id="project-number-1" className="project-mask-number">
                     <div className="project-mask-back"> 01 </div>
@@ -213,7 +213,7 @@ const Home = () => {
                       <div className="button-mask"></div>
                     </button>
                   </div>
-                </a>
+                </Link>
               </li>
               <li className="project2-li">
                 <a id="project2" href="#!" className="project">
@@ -257,9 +257,19 @@ const Home = () => {
                 <ul>
                   <li className="html"> HTML</li>
                   <li className="css"> CSS</li>
-                  <li className="javascript"> JAVASCRIPT</li>
-                  <li className="react"> REACT</li>
-                  <li className="redux"> REDUX</li>
+                  <li className="javascript"> Javascript</li>
+                  <li className="typescript"> Typescript</li>
+                  <li className="react"> ReactJS</li>
+                  <li className="redux"> Redux</li>
+                  <li className="react-hooks"> React hooks</li>
+                  <li className="nodejs"> NodeJS</li>
+                  <li className="nestjs"> NestJS</li>
+                  <li className="mongodb"> MongoDB</li>
+                  <li className="es6"> ES6</li>
+                  <li className="restful"> RESTful API's</li>
+                  <li className="bootstrap"> Bootstrap</li>
+                  <li className="git"> Git</li>
+                  <li className="Sass"> SASS</li>
                 </ul>
               </div>
 
