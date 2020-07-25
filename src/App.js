@@ -1,7 +1,8 @@
 import React from "react";
 import Home from "./Containers/Home/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ProjectPage from "./Containers/ProjectPage/ProjectPage";
+import Layls from "./Containers/ProjectPage/Layls";
+import Nike from "./Containers/ProjectPage/Nike";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <React.Fragment>
           <div className="App">
             <Route exact path="/" component={Home} />
-            <Route path="/layls" component={ProjectPage} />
+            <Route path="/nike" component={Nike} />
+            <Route path="/layls" component={Layls} />
           </div>
         </React.Fragment>
       </Switch>

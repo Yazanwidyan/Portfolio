@@ -75,19 +75,6 @@ body {
   font-size: 19px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 32rem;
-    height: 101px;
-    background-color: white;
-    top: 0;
-    left: 0;
-    transform: translateX(-105%);
-    animation: slide 0.65s cubic-bezier(0.694, 0.048, 0.335, 1),
-      -webkit-transform 0.65s cubic-bezier(0.694, 0.048, 0.335, 1);
-    animation-delay: 1.8s;
-  }
 
   .lg-head {
     color: $hero-color;
@@ -170,19 +157,7 @@ body {
   width: 295px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 19rem;
-    height: 52px;
-    background-color: white;
-    top: 0;
-    left: 0;
-    transform: translateX(-110%);
-    animation: slide 0.65s cubic-bezier(0.694, 0.048, 0.335, 1),
-      -webkit-transform 0.65s cubic-bezier(0.694, 0.048, 0.335, 1);
-    animation-delay: 1.8s;
-  }
+
 }
 
 a {
@@ -379,7 +354,7 @@ body {
           li {
             position: absolute;
             list-style: none;
-            color: #cbe0e4;
+            color: #ffff;
           }
 
           .html {
@@ -507,33 +482,6 @@ body {
   min-height: 100%;
   overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #252a60;
-    z-index: 501;
-    animation: slide 1s ease-in-out;
-    transform: translateX(-100%);
-    overflow: hidden;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: $primary-color;
-    z-index: 500;
-    animation: move 2s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-  }
 
   .scrolled {
     transform: translateY(-120%);
@@ -923,19 +871,7 @@ body {
         outline: none;
       }
 
-      &::after {
-        content: "";
-        position: absolute;
-        width: 14rem;
-        height: 3rem;
-        background-color: white;
-        top: 0;
-        left: 0;
-        transform: translateX(-110%);
-        animation: slide 0.65s cubic-bezier(0.694, 0.048, 0.335, 1),
-          -webkit-transform 0.65s cubic-bezier(0.694, 0.048, 0.335, 1);
-        animation-delay: 1.8s;
-      }
+
 
       .button-text {
         position: relative;
@@ -1195,19 +1131,10 @@ main {
     color: rgb(0, 0, 0);
     transition: all 0.5s ease-out;
 
-    &:hover {
-      cursor: pointer;
-      padding: 0.5rem 1.5rem;
-      background: rgb(39, 36, 36);
-      color: white;
-      width: 42vh;
 
-      span {
-        color: white;
-      }
-    }
   }
 }
+
 
 .btn {
   display: block;
@@ -1640,6 +1567,18 @@ main {
   background: url(../Assets/Images/taylor-swift-singer-qhd-2560x1440.jpg) no-repeat center center;
 }
 
+.projects-header2 {
+  color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-size: cover !important;
+  background: url(../Assets/Images/281050.jpg) no-repeat center center;
+}
+
 .projects-header::before {
 
   content: "";
@@ -1696,12 +1635,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(3, 3, 22);
+  background-color: #060c10;
 }
 
 .desc-title {
   font-size: 60px;
   padding: 30px;
+  font-weight: bold;
+
 
 }
 
@@ -1723,11 +1664,13 @@ main {
   color: white;
   background-color: black;
   transition: all .5s ease-out;
+  position: relative;
 
 
   &:hover {
     transition: all .5s ease-out;
-    background-color: yellowgreen;
+    background-color: #00c8e7;
+    position: relative;
   }
 }
 

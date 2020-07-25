@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import arrow from "../../Assets/Images/Untitled-1.png";
 
-const ProjectPage = () => {
+const Layls = () => {
   const [scrollPos, setScroll] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
   const [open, setOpen] = useState(false);
@@ -17,6 +17,10 @@ const ProjectPage = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleContactOpen = () => {
     setOpen(!open);
@@ -108,28 +112,54 @@ const ProjectPage = () => {
       <div className="projects-description">
         <span className="desc-title">The Project</span>
         <span className="projects-desc">
-          Cerasa is composed of an established team of Italian master craftsmen
-          that produces and puts up bathrooms undisputed of exceptional "Made in
-          Italy" quality. Cerasa collections are designed to satisfy the most
-          diverse housing styles, fit the style of the house and its
-          inhabitants.
+          Layls website is an e-commerce website for buying and trading dresses,
+          As a Front-end Developer, I was responsible of building the entire UI
+          for the new website, redefining the User Experience and studying new
+          interactions between the User and the Interface, also added the Arabic
+          version
         </span>
-        <button className="the-button">
-          <span className="button-text">Visit Website </span>
-          <span className=" button-icon">
-            <img className="arrow-logo" src={arrow} alt=""></img>
-          </span>
-          <div className="button-mask"></div>
-        </button>
+        <a href="https://layls.com">
+          <button className="the-button">
+            <span className="button-text">Visit Website </span>
+            <span className=" button-icon">
+              <img className="arrow-logo" src={arrow} alt=""></img>
+            </span>
+            <div className="button-mask"></div>
+          </button>
+        </a>
       </div>
-      <div className="next-projects">
-        <span className="next-work-title">Next Work</span>
-        <div className="next-work">
-          Duplicate Nike Website{" "}
-          <img className="next-arrow" src={arrow} alt="dd" />
+      <Link to="/nike">
+        <div className="next-projects">
+          <span className="next-work-title">Next Work</span>
+          <div className="next-work">
+            Duplicate Nike Website
+            <img className="next-arrow" src={arrow} alt="dd" />
+          </div>
         </div>
-      </div>
+      </Link>
+      <footer className="footer">
+        <div className="content">
+          <div className="inner-container">
+            <ul className="footer-links">
+              <li>
+                <a href="https://www.linkedin.com/in/yazan-widyan-863305157/">
+                  Linkedin
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Yazanwidyan">Github</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/yazan.widyan/">Facebook</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-copy">
+            &copy; 2020 Yazan Widyan - <a href="!#">contact</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
-export default ProjectPage;
+export default Layls;

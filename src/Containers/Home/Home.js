@@ -35,6 +35,7 @@ const Home = () => {
     } else {
       document.body.classList.remove("is-open");
     }
+    window.scrollTo(500, 0);
   };
 
   const handleMobileOpen = () => {
@@ -216,7 +217,7 @@ const Home = () => {
                 </Link>
               </li>
               <li className="project2-li">
-                <a id="project2" href="#!" className="project">
+                <Link id="project2" to="/nike" className="project">
                   <div className="project-mask"> </div>
                   <div id="project-number-2" className="project-mask-number">
                     <div className="project-mask-back"> 02 </div>
@@ -240,7 +241,7 @@ const Home = () => {
                       <div className="button-mask"></div>
                     </button>
                   </div>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
