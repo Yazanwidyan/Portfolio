@@ -110,7 +110,7 @@ const Layls = () => {
         </div>
       </div>
       <div className="projects-description">
-        <span className="desc-title">The Project</span>
+        <span className="desc-title">Introduction</span>
         <span className="projects-desc">
           Layls website is an e-commerce website for buying and trading dresses,
           As a Front-end Developer, I was responsible of building the entire UI

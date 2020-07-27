@@ -285,12 +285,12 @@ const Home = () => {
               <div className="giga-text">About</div>
               <div className="contact-info">
                 <h3 className="about-me-title">About Me</h3>
-                <h4>Full-stack web developer.</h4>
+                <h4>Front-end web developer.</h4>
                 <p className="about-me-text">
                   I'm Yazan Widyan, a 26-year-old a Highly motivated,
-                  self-starting <strong>full-stack web developer</strong>{" "}
-                  seeking to launch a career building web applications and
-                  services familiar with development and deployment proccess
+                  self-starting <strong>front-end web developer</strong> seeking
+                  to launch a career building web applications and services
+                  familiar with development and deployment proccess
                   <br />
                   and I like to <strong>Resolve</strong> design problems,
                 </p>

@@ -105,12 +105,12 @@ const Nike = () => {
             <span className="blue-color">context</span> Website creation{" "}
           </div>
           <div className="project-period">
-            <span className="blue-color">Period</span> middle 2020
+            <span className="blue-color">Period</span> early 2020
           </div>
         </div>
       </div>
       <div className="projects-description">
-        <span className="desc-title">The Project</span>
+        <span className="desc-title">Introduction</span>
         <span className="projects-desc">
           Duplicate Nike Website is a website that is similar to nike official
           website which have many features that could be in most of e-commerce
@@ -130,7 +130,7 @@ const Nike = () => {
         <div className="next-projects">
           <span className="next-work-title">Next Work</span>
           <div className="next-work">
-            Layls
+            Layls Website
             <img className="next-arrow" src={arrow} alt="dd" />
           </div>
         </div>

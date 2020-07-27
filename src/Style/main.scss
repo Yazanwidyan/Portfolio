@@ -558,7 +558,7 @@ body {
         position: relative;
         color: $text-color;
         transition: color 0.35s ease;
-        font-size: 16px;
+        font-size: 18px;
         letter-spacing: -1px;
         cursor: pointer;
 
@@ -1576,7 +1576,7 @@ main {
   align-items: center;
   height: 90vh;
   background-size: cover !important;
-  background: url(../Assets/Images/281050.jpg) no-repeat center center;
+  background: url(../Assets/Images/RAVE-Review-BestNikeRunningShoes-Body3.jpg) no-repeat center center;
 }
 
 .projects-header::before {
@@ -1585,7 +1585,17 @@ main {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(68, 68, 68, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.projects-header2::before {
+
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -1603,6 +1613,9 @@ main {
     font-size: 4.997584em;
     line-height: .9380665066;
     font-weight: bold;
+    font-family: "spartan";
+    letter-spacing: -4px;
+
 
   }
 
@@ -1610,7 +1623,8 @@ main {
     padding-top: 10px;
     font-size: 1.500em;
     font-style: italic;
-    font-weight: 400;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
   }
 
 }
@@ -1630,10 +1644,12 @@ main {
 
 .projects-description {
   display: flex;
+  position: relative;
   color: white;
   padding: 70px 0 100px 0;
   flex-direction: column;
   justify-content: center;
+  z-index: 2;
   align-items: center;
   background-color: #060c10;
 }
@@ -1642,6 +1658,9 @@ main {
   font-size: 60px;
   padding: 30px;
   font-weight: bold;
+  letter-spacing: -3px;
+  font-family: "spartan";
+
 
 
 }
@@ -1659,29 +1678,70 @@ main {
 }
 
 .next-projects {
-  padding: 45px;
+  padding: 45px 160px 45px 160px;
   cursor: pointer;
   color: white;
   background-color: black;
-  transition: all .5s ease-out;
+  transition: transform .38s cubic-bezier(.694, .048, .335, 1), -webkit-transform .38s cubic-bezier(.694, .048, .335, 1);
   position: relative;
 
-
-  &:hover {
-    transition: all .5s ease-out;
-    background-color: #00c8e7;
-    position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: #37A5EB;
+    transition: transform .38s cubic-bezier(.694, .048, .335, 1), -webkit-transform .38s cubic-bezier(.694, .048, .335, 1);
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: rgb(228, 72, 72);
+    transition: transform .38s cubic-bezier(.694, .048, .335, 1), -webkit-transform .38s cubic-bezier(.694, .048, .335, 1);
+  }
+
+
 }
 
+.next-projects:hover::before {
+  transition: transform .40s cubic-bezier(.694, .048, .335, 1), -webkit-transform .38s cubic-bezier(.694, .048, .335, 1);
+  transform: translateY(0);
+
+}
+
+.next-projects:hover::after {
+  transition: transform .65s cubic-bezier(.694, .048, .335, 1), -webkit-transform .38s cubic-bezier(.694, .048, .335, 1);
+  transform: translateY(0);
+
+}
+
+.next-projects:hover .next-arrow {
+  right: 120px;
+  transition: all .40s ease-in-out
+}
 
 .next-work-title {
   color: white;
+  z-index: 5;
+  position: relative;
+
 }
 
 .next-work {
-  font-size: 45px;
+  font-size: 50px;
   position: relative;
+  z-index: 5;
+  letter-spacing: -3px;
+  font-family: "spartan";
 }
 
 .blue-color {
@@ -1692,6 +1752,8 @@ main {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+  font-family: "spartan";
+
 
 }
 
@@ -1699,6 +1761,8 @@ main {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+  font-family: "spartan";
+
 
 }
 
@@ -1706,6 +1770,8 @@ main {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+  font-family: "spartan";
+
 
 }
 
@@ -1715,6 +1781,7 @@ main {
   right: 165px;
   top: 18px;
   position: absolute;
+  transition: all .20s ease-in-out
 }
 
 
