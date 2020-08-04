@@ -112,11 +112,12 @@ const Erasmus = () => {
       <div className="projects-description">
         <span className="desc-title">Introduction</span>
         <span className="projects-desc">
-          Layls website is an e-commerce website for buying and trading dresses,
-          As a Front-end Developer, I was responsible of building the entire UI
-          for the new website, redefining the User Experience and studying new
-          interactions between the User and the Interface, also added the Arabic
-          version
+          Erasmus+ is the EU's programme to support education, training, youth
+          and sport in Europe. Its budget of €14.7 billion will provide
+          opportunities for over 4 million Europeans to study, train, and gain
+          experience abroad. Set to last until 2020, Erasmus+ doesn't just have
+          opportunities for students. Merging seven prior programmes, it has
+          opportunities for a wide variety of individuals and organisations.
         </span>
         <a href>
           <button className="the-button">

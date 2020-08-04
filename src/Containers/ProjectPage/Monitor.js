@@ -113,11 +113,13 @@ const Monitor = () => {
       <div className="projects-description">
         <span className="desc-title">Introduction</span>
         <span className="projects-desc">
-          Layls website is an e-commerce website for buying and trading dresses,
-          As a Front-end Developer, I was responsible of building the entire UI
-          for the new website, redefining the User Experience and studying new
-          interactions between the User and the Interface, also added the Arabic
-          version
+          WTM Monitor is a measure of website reliability, expressed as the
+          percentage of time a website, has been working and available. Uptime
+          is the opposite of downtime. Htop adds an exclamation mark when uptime
+          is longer than 100 days It is often used as a measure of website
+          reliability or stability, in that this time represents the time a
+          website can be left unattended without crashing, or needing to be
+          rebooted for administrative or maintenance purposes.
         </span>
         <a href>
           <button className="the-button">
