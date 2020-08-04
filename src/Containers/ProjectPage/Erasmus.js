@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import arrow from "../../Assets/Images/Untitled-1.png";
 
-const Nike = () => {
+const Erasmus = () => {
   const [scrollPos, setScroll] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
   const [open, setOpen] = useState(false);
@@ -91,32 +91,34 @@ const Nike = () => {
           </li>
         </ul>
       </nav>
-      <div className="projects-header2">
+      <div className="projects-header4">
         <div className="title-section">
-          <div className="projects-title">Duplicate Nike Website </div>
-          <div className="projects-subtitle"> Multifunctioning Website </div>
+          <div className="projects-title">Erasmus+ </div>
+          <div className="projects-subtitle"> student exchange program </div>
         </div>
         <div className="projects-details">
           <div className="project-role">
             {" "}
-            <span className="blue-color">Role</span> Full-stack developer{" "}
+            <span className="blue-color">Role</span> Front-End developer{" "}
           </div>
           <div className="project-context">
-            <span className="blue-color">context</span> Website creation{" "}
+            <span className="blue-color">context</span> Website development{" "}
           </div>
           <div className="project-period">
-            <span className="blue-color">Period</span> early 2020
+            <span className="blue-color">Period</span> late 2020
           </div>
         </div>
       </div>
       <div className="projects-description">
         <span className="desc-title">Introduction</span>
         <span className="projects-desc">
-          Duplicate Nike Website is a website that is similar to nike official
-          website which have many features that could be in most of e-commerce
-          websites. with nodejs as backend and reactjs as frontend
+          Layls website is an e-commerce website for buying and trading dresses,
+          As a Front-end Developer, I was responsible of building the entire UI
+          for the new website, redefining the User Experience and studying new
+          interactions between the User and the Interface, also added the Arabic
+          version
         </span>
-        <a href="https://github.com/Yazanwidyan/online-shop-webapp">
+        <a href>
           <button className="the-button">
             <span className="button-text">Visit Website </span>
             <span className=" button-icon">
@@ -126,11 +128,11 @@ const Nike = () => {
           </button>
         </a>
       </div>
-      <Link to="/monitor">
+      <Link to="/layls">
         <div className="next-projects">
           <span className="next-work-title">Next Work</span>
           <div className="next-work">
-            WTM Monitor
+            Layls Website
             <img className="next-arrow" src={arrow} alt="dd" />
           </div>
         </div>
@@ -160,4 +162,4 @@ const Nike = () => {
     </div>
   );
 };
-export default Nike;
+export default Erasmus;

@@ -1215,6 +1215,17 @@ main {
           background-size: cover;
         }
 
+        #project3 {
+          background: url("../Assets/Images/dd.png");
+          background-size: cover;
+        }
+
+        #project4 {
+          background: url("../Assets/Images/advantges1.png");
+          background-size: cover;
+        }
+
+
         .project:hover .project-mask::after {
           transform: translateX(0%);
         }
@@ -1579,6 +1590,30 @@ main {
   background: url(../Assets/Images/RAVE-Review-BestNikeRunningShoes-Body3.jpg) no-repeat center center;
 }
 
+.projects-header3 {
+  color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-size: cover !important;
+  background: url(../Assets/Images/dd.png) no-repeat center center;
+}
+
+.projects-header4 {
+  color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-size: cover !important;
+  background: url(../Assets/Images/advantges1@3x.png) no-repeat center center;
+}
+
 .projects-header::before {
 
   content: "";
@@ -1590,6 +1625,26 @@ main {
 }
 
 .projects-header2::before {
+
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.projects-header3::before {
+
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.projects-header4::before {
 
   content: "";
   position: absolute;

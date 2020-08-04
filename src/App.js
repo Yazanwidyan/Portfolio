@@ -3,6 +3,8 @@ import Home from "./Containers/Home/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layls from "./Containers/ProjectPage/Layls";
 import Nike from "./Containers/ProjectPage/Nike";
+import Monitor from "./Containers/ProjectPage/Monitor";
+import Erasmus from "./Containers/ProjectPage/Erasmus";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/nike" component={Nike} />
             <Route path="/layls" component={Layls} />
+            <Route path="/monitor" component={Monitor} />
+            <Route path="/erasmus" component={Erasmus} />
           </div>
         </React.Fragment>
       </Switch>

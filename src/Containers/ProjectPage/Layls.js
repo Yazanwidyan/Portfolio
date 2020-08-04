@@ -118,7 +118,7 @@ const Layls = () => {
           interactions between the User and the Interface, also added the Arabic
           version
         </span>
-        <a href="https://layls.com">
+        <a href="https://layls.com/home">
           <button className="the-button">
             <span className="button-text">Visit Website </span>
             <span className=" button-icon">

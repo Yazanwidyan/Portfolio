@@ -223,16 +223,70 @@ const Home = () => {
                     <div className="project-mask-back"> 02 </div>
                     <div className="project-mask-front">
                       <div data-index="02" className="project-mask-overlay">
-                        01
+                        02
                       </div>
                     </div>
                   </div>
                   <div className="work-text-section">
-                    <div className="project-title"> Duplicat Nike Website </div>
+                    <div className="project-title">
+                      {" "}
+                      Duplicate Nike Website{" "}
+                    </div>
                     <div className="project-subtitle">
                       {" "}
                       Amazing Multifunctioning Website{" "}
                     </div>
+                    <button className="the-button">
+                      <span className="button-text">View More</span>
+                      <span className=" button-icon">
+                        <img className="arrow-logo" src={arrow} alt=""></img>
+                      </span>
+                      <div className="button-mask"></div>
+                    </button>
+                  </div>
+                </Link>
+              </li>
+              <li className="project1-li">
+                <Link id="project3" to="/monitor" className="project">
+                  <div className="project-mask"> </div>
+                  <div id="project-number-1" className="project-mask-number">
+                    <div className="project-mask-back"> 03 </div>
+                    <div className="project-mask-front">
+                      <div data-index="03" className="project-mask-overlay">
+                        03
+                      </div>
+                    </div>
+                  </div>
+                  <div className="work-text-section">
+                    <div className="project-title"> WTM Monitor </div>
+                    <div className="project-subtitle">
+                      {" "}
+                      Monitoring service Website{" "}
+                    </div>
+                    <button className="the-button">
+                      <span className="button-text">View More</span>
+                      <span className=" button-icon">
+                        <img className="arrow-logo" src={arrow} alt=""></img>
+                      </span>
+                      <div className="button-mask"></div>
+                    </button>
+                  </div>
+                </Link>
+              </li>
+              <li className="project2-li">
+                <Link id="project4" to="/erasmus" className="project">
+                  <div className="project-mask"> </div>
+                  <div id="project-number-2" className="project-mask-number">
+                    <div className="project-mask-back"> 04 </div>
+                    <div className="project-mask-front">
+                      <div data-index="04" className="project-mask-overlay">
+                        04
+                      </div>
+                    </div>
+                  </div>
+                  <div className="work-text-section">
+                    <div className="project-title"> Erasmus Tab </div>
+                    <div className="project-subtitle"> </div>
                     <button className="the-button">
                       <span className="button-text">View More</span>
                       <span className=" button-icon">
