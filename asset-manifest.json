@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ccc9755f.chunk.css",
-    "main.js": "/portfolio/static/js/main.dc2d7886.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.dc2d7886.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.558780db.chunk.css",
+    "main.js": "/portfolio/static/js/main.64e1cf6c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.64e1cf6c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.44087e9b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.44087e9b.js.map",
     "static/js/2.9fb00c19.chunk.js": "/portfolio/static/js/2.9fb00c19.chunk.js",
     "static/js/2.9fb00c19.chunk.js.map": "/portfolio/static/js/2.9fb00c19.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.4a438d847f73a074083300a4f1bc2f41.js": "/portfolio/precache-manifest.4a438d847f73a074083300a4f1bc2f41.js",
+    "precache-manifest.fa5725c970dfb5d249d47bf42a65a986.js": "/portfolio/precache-manifest.fa5725c970dfb5d249d47bf42a65a986.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.ccc9755f.chunk.css.map": "/portfolio/static/css/main.ccc9755f.chunk.css.map",
+    "static/css/main.558780db.chunk.css.map": "/portfolio/static/css/main.558780db.chunk.css.map",
     "static/js/2.9fb00c19.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9fb00c19.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/portfolio/static/media/taylor-swift-singer-qhd-2560x1440.d939f532.jpg"
+    "static/media/main.scss": "/portfolio/static/media/sdsd.f60efbec.png"
   },
   "entrypoints": [
     "static/js/runtime-main.44087e9b.js",
     "static/js/2.9fb00c19.chunk.js",
-    "static/css/main.ccc9755f.chunk.css",
-    "static/js/main.dc2d7886.chunk.js"
+    "static/css/main.558780db.chunk.css",
+    "static/js/main.64e1cf6c.chunk.js"
   ]
 }

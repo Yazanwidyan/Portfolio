@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ff2f8a4707fe27bd8901ef9456217b6",
+    "revision": "de3efc0d2e3330b13be4e6da90992155",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "bcf5adce4c5fcd2896b7",
-    "url": "/portfolio/static/css/main.ccc9755f.chunk.css"
+    "revision": "ea5aed4174b113d5a10a",
+    "url": "/portfolio/static/css/main.558780db.chunk.css"
   },
   {
     "revision": "e48a8787e9c12ad906da",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.9fb00c19.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bcf5adce4c5fcd2896b7",
-    "url": "/portfolio/static/js/main.dc2d7886.chunk.js"
+    "revision": "ea5aed4174b113d5a10a",
+    "url": "/portfolio/static/js/main.64e1cf6c.chunk.js"
   },
   {
     "revision": "0d98471f6c3b69ca4251",
@@ -44,15 +44,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/dd.e14ca1f0.png"
   },
   {
+    "revision": "3e08059d61c814ebbd979680e33b0552",
+    "url": "/portfolio/static/media/reddress-1596726619597-7020.3e08059d.jpg"
+  },
+  {
     "revision": "7e439980527c4cea91c1f7795b5c21db",
     "url": "/portfolio/static/media/rrrr.7e439980.jpg"
   },
   {
     "revision": "f60efbec08fb853d65479b2cbf1c04f1",
     "url": "/portfolio/static/media/sdsd.f60efbec.png"
-  },
-  {
-    "revision": "d939f532112a89952b2a780f5f8a1997",
-    "url": "/portfolio/static/media/taylor-swift-singer-qhd-2560x1440.d939f532.jpg"
   }
 ]);
