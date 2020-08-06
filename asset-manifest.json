@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ccc9755f.chunk.css",
+    "main.js": "/portfolio/static/js/main.e3ed1bd3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e3ed1bd3.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.44087e9b.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.44087e9b.js.map",
+    "static/js/2.af8859a1.chunk.js": "/portfolio/static/js/2.af8859a1.chunk.js",
+    "static/js/2.af8859a1.chunk.js.map": "/portfolio/static/js/2.af8859a1.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.76075a4e97972f3c91a929955cfa99fe.js": "/portfolio/precache-manifest.76075a4e97972f3c91a929955cfa99fe.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.ccc9755f.chunk.css.map": "/portfolio/static/css/main.ccc9755f.chunk.css.map",
+    "static/js/2.af8859a1.chunk.js.LICENSE.txt": "/portfolio/static/js/2.af8859a1.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/portfolio/static/media/taylor-swift-singer-qhd-2560x1440.d939f532.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44087e9b.js",
+    "static/js/2.af8859a1.chunk.js",
+    "static/css/main.ccc9755f.chunk.css",
+    "static/js/main.e3ed1bd3.chunk.js"
+  ]
+}
