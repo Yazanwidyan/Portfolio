@@ -97,15 +97,14 @@ const Home = () => {
         </span>
         <ul className="mobile-nav-links">
           <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
             <a href onClick={handleContactOpen}>
               Skills
             </a>
           </li>
           <li>
-            <a href>Work</a>
+            <a href onClick={scrollDownHandler}>
+              Work
+            </a>
           </li>
           <li>
             <a href onClick={handleContactOpen}>
