@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./Containers/Home/Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Layls from "./Containers/ProjectPage/Layls";
 import Nike from "./Containers/ProjectPage/Nike";
 import Monitor from "./Containers/ProjectPage/Monitor";
