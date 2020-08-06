@@ -99,17 +99,22 @@ const Erasmus = () => {
         <div className="projects-details">
           <div className="project-role">
             {" "}
-            <span className="blue-color">Role</span> Front-End developer{" "}
+            <span style={{ color: "rgb(255 246 135)" }}>Role</span> Front-End
+            developer{" "}
           </div>
           <div className="project-context">
-            <span className="blue-color">context</span> Website development{" "}
+            <span style={{ color: "rgb(255 246 135)" }}>context</span> Website
+            development{" "}
           </div>
           <div className="project-period">
-            <span className="blue-color">Period</span> late 2020
+            <span style={{ color: "rgb(255 246 135)" }}>Period</span> end 2020
           </div>
         </div>
       </div>
-      <div className="projects-description">
+      <div
+        className="projects-description"
+        style={{ backgroundColor: "rgb(92 125 210)" }}
+      >
         <span className="desc-title">Introduction</span>
         <span className="projects-desc">
           Erasmus+ is the EU's programme to support education, training, youth
@@ -120,7 +125,7 @@ const Erasmus = () => {
           opportunities for a wide variety of individuals and organisations.
         </span>
         <a href>
-          <button className="the-button">
+          <button className="visit-website-btn">
             <span className="button-text">Visit Website </span>
             <span className=" button-icon">
               <img className="arrow-logo" src={arrow} alt=""></img>
@@ -128,6 +133,19 @@ const Erasmus = () => {
             <div className="button-mask"></div>
           </button>
         </a>
+      </div>
+      <div
+        className="projects-description"
+        style={{ backgroundColor: "#f3f3f3" }}
+      >
+        <span className="desc-title" style={{ color: "#1c1d25" }}>
+          About this project
+        </span>
+        <span className="projects-desc" style={{ color: "#1c1d25" }}>
+          On this project I was responsible for the initial UI/UX architecture,
+          structure, design and animations. also did the development process
+          from scratch
+        </span>
       </div>
       <Link to="/layls">
         <div className="next-projects">

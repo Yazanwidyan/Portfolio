@@ -578,7 +578,7 @@ body {
         }
 
         &::before {
-          background: $third-color;
+          background: #235aa6;
           transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
           content: "";
           position: absolute;
@@ -762,6 +762,38 @@ body {
     -webkit-transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
 }
 
+
+.icons {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 2%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.35s ease 0.75s;
+  z-index: 7;
+  font-size: 25px;
+
+
+  li {
+    margin: 15px 0;
+
+
+    a {
+      @include easeOut();
+
+      &:hover {
+        color: white;
+        @include easeOut();
+      }
+    }
+  }
+}
+
 .main-hero {
   height: 100vh;
   overflow: hidden;
@@ -780,15 +812,12 @@ body {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 0;
-    width: 100%;
     color: #fff;
     transition: color 0.3s ease, opacity 0.3s ease 0.65s;
     z-index: 7;
 
     .content {
-      margin: 0 auto;
-      width: 1170px;
-      padding-left: 10px;
+      padding-left: 188px;
     }
 
     .text-loading-mask {
@@ -819,33 +848,6 @@ body {
       overflow: hidden;
       transition: all 0.2s ease;
       width: 13rem;
-    }
-
-    .icons {
-      position: absolute;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      right: 2%;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      transition: opacity 0.35s ease 0.75s;
-      z-index: 7;
-      font-size: 25px;
-
-      li {
-        margin: 15px 0;
-
-        a {
-          &:hover {
-            color: white;
-            @include easeOut();
-          }
-        }
-      }
     }
 
     .the-button {
@@ -1262,7 +1264,7 @@ main {
           height: 100%;
           width: 70%;
           opacity: 1;
-          height: 480px;
+          height: 530px;
           background-color: #1c1d25;
           position: relative;
           box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
@@ -1345,8 +1347,8 @@ main {
               font-weight: 400;
               font-style: italic;
               margin-bottom: 20px;
-              font-size: 1em;
-              line-height: 1.5;
+              font-size: 18px;
+              line-height: 0.9;
             }
 
             .the-button {
@@ -1504,6 +1506,66 @@ main {
   }
 }
 
+.visit-website-btn {
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  padding: 17px 20px 15px 20px;
+  position: relative;
+  @include easeOut();
+
+  &:focus {
+    outline: none;
+  }
+
+
+
+  &:hover {
+    background-color: white;
+    @include easeOut();
+    cursor: pointer;
+
+
+    .button-text {
+      @include easeOut();
+      color: black;
+    }
+
+    .button-icon {
+      transform: translateX(10px);
+
+    }
+  }
+
+
+
+  .button-text {
+    @include easeOut();
+
+    color: white;
+    position: relative;
+    z-index: 10;
+    font-family: "spartan";
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  .button-icon {
+    position: absolute;
+    top: -4px;
+    right: -25px;
+    width: 35px;
+    height: 35px;
+    font-size: 39px;
+    transform: translateX(2px);
+    transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1),
+      -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+
+    .arrow-logo {
+      width: 37px;
+    }
+  }
+}
+
 .footer {
   width: 100%;
   background: #1c1d25;
@@ -1512,8 +1574,7 @@ main {
   color: #f3f3f3;
 
   .content {
-    width: 1170px;
-    margin: 0 auto;
+
 
     .inner-container {
       width: 100%;
@@ -1524,9 +1585,9 @@ main {
         display: inline-block;
         list-style: none;
         padding: 0;
-        margin: 0;
+        letter-spacing: -1px;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.3em;
 
         li {
           display: inline-block;
@@ -1550,11 +1611,11 @@ main {
       margin-left: -36px;
       text-align: center;
       font-size: 0.8em;
-      font-family: "Mukta", sans-serif;
+      font-family: "libre Baskerville", sans-serif;
 
       a {
         color: white;
-        font-family: "Mukta", sans-serif;
+        font-family: "libre Baskerville", sans-serif;
       }
     }
   }
@@ -1575,7 +1636,7 @@ main {
   align-items: center;
   height: 90vh;
   background-size: cover !important;
-  background: url(../Assets/Images/taylor-swift-singer-qhd-2560x1440.jpg) no-repeat center center;
+  background: url(../Assets/Images/reddress-1596726619597-7020.jpg) no-repeat;
 }
 
 .projects-header2 {
@@ -1701,6 +1762,7 @@ main {
   display: flex;
   position: relative;
   color: white;
+  font-family: "Libre Baskerville", serif;
   padding: 70px 0 100px 0;
   flex-direction: column;
   justify-content: center;
@@ -1722,7 +1784,8 @@ main {
 
 .projects-desc {
   font-size: 20px;
-  width: 50%;
+  width: 37%;
+  text-align: justify;
   padding-bottom: 32px;
 
 }
@@ -1799,13 +1862,12 @@ main {
   font-family: "spartan";
 }
 
-.blue-color {
-  color: #37A5EB;
-}
+
 
 .project-role {
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 13px;
   letter-spacing: 1px;
   font-family: "spartan";
 
@@ -1816,6 +1878,8 @@ main {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+  font-size: 13px;
+
   font-family: "spartan";
 
 
@@ -1825,6 +1889,8 @@ main {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+  font-size: 13px;
+
   font-family: "spartan";
 
 

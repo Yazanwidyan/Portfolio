@@ -94,32 +94,34 @@ const Layls = () => {
       <div className="projects-header">
         <div className="title-section">
           <div className="projects-title">Layls Website </div>
-          <div className="projects-subtitle"> Dresses Website </div>
+          <div className="projects-subtitle"> Dresses E-commerce Website </div>
         </div>
         <div className="projects-details">
           <div className="project-role">
             {" "}
-            <span className="blue-color">Role</span> Front-End developer{" "}
+            <span style={{ color: "rgb(189 92 92)" }}>Role</span> Front-End
+            developer{" "}
           </div>
           <div className="project-context">
-            <span className="blue-color">context</span> Website redesign{" "}
+            <span style={{ color: "rgb(189 92 92)" }}>context</span> Website
+            redesign{" "}
           </div>
           <div className="project-period">
-            <span className="blue-color">Period</span> middle 2020
+            <span style={{ color: "rgb(189 92 92)" }}>Period</span> middle 2020
           </div>
         </div>
       </div>
-      <div className="projects-description">
+      <div className="projects-description" style={{ backgroundColor: "#c96" }}>
         <span className="desc-title">Introduction</span>
         <span className="projects-desc">
-          Layls website is an e-commerce website for buying and trading dresses,
-          As a Front-end Developer, I was responsible of building the entire UI
-          for the new website, redefining the User Experience and studying new
-          interactions between the User and the Interface, also added the Arabic
-          version
+          Store (Layls) represents one of the leading platforms in the field of
+          dresses where the store is divided into two parts, one of them
+          represents the link between customers and sellers, through electronic
+          display and control panels that allow the seller to display and market
+          his products to reach the largest possible number of sellers
         </span>
         <a href="https://layls.com/home">
-          <button className="the-button">
+          <button className="visit-website-btn">
             <span className="button-text">Visit Website </span>
             <span className=" button-icon">
               <img className="arrow-logo" src={arrow} alt=""></img>
@@ -127,6 +129,20 @@ const Layls = () => {
             <div className="button-mask"></div>
           </button>
         </a>
+      </div>
+      <div
+        className="projects-description"
+        style={{ backgroundColor: "#f3f3f3" }}
+      >
+        <span className="desc-title" style={{ color: "#1c1d25" }}>
+          About this project
+        </span>
+        <span className="projects-desc" style={{ color: "#1c1d25" }}>
+          On this project as a Front-end Developer, I was responsible of
+          building the entire UI for the new website, redefining the User
+          Experience and studying new interactions between the User and the
+          Interface, also added the Arabic version
+        </span>
       </div>
       <Link to="/nike">
         <div className="next-projects">

@@ -99,18 +99,21 @@ const Monitor = () => {
         <div className="projects-details">
           <div className="project-role">
             {" "}
-            <span className="blue-color">Role</span> Full-stack developer{" "}
+            <span style={{ color: "#ff78ee" }}>Role</span> Full-stack developer{" "}
           </div>
           <div className="project-context">
-            <span className="blue-color">context</span> Website design &
+            <span style={{ color: "#ff78ee" }}>context</span> Website design &
             development{" "}
           </div>
           <div className="project-period">
-            <span className="blue-color">Period</span> late 2020
+            <span style={{ color: "#ff78ee" }}>Period</span> end 2020
           </div>
         </div>
       </div>
-      <div className="projects-description">
+      <div
+        className="projects-description"
+        style={{ backgroundColor: "rgb(212 151 25)" }}
+      >
         <span className="desc-title">Introduction</span>
         <span className="projects-desc">
           WTM Monitor is a measure of website reliability, expressed as the
@@ -122,7 +125,7 @@ const Monitor = () => {
           rebooted for administrative or maintenance purposes.
         </span>
         <a href>
-          <button className="the-button">
+          <button className="visit-website-btn">
             <span className="button-text">Visit Website </span>
             <span className=" button-icon">
               <img className="arrow-logo" src={arrow} alt=""></img>
@@ -130,6 +133,20 @@ const Monitor = () => {
             <div className="button-mask"></div>
           </button>
         </a>
+      </div>
+      <div
+        className="projects-description"
+        style={{ backgroundColor: "#f3f3f3" }}
+      >
+        <span className="desc-title" style={{ color: "#1c1d25" }}>
+          About this project
+        </span>
+        <span className="projects-desc" style={{ color: "#1c1d25" }}>
+          On this project as a full-stack Developer, I was responsible of
+          building the entire UI for the new website, redefining the User
+          Experience and studying new interactions between the User and the
+          Interface, also building the entire back-end using nestJS
+        </span>
       </div>
       <Link to="/erasmus">
         <div className="next-projects">

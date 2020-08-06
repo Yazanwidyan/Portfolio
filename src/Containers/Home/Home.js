@@ -50,6 +50,7 @@ const Home = () => {
   const scrollDownHandler = () => {
     const element = document.getElementById("main1");
     element.scrollIntoView({ behavior: "smooth" });
+    document.body.classList.remove("is-mobile-open");
   };
 
   const handleScroll = () => {
@@ -108,13 +109,30 @@ const Home = () => {
           </li>
           <li>
             <a href onClick={handleContactOpen}>
-              Contact{" "}
+              Contact
             </a>
           </li>
         </ul>
       </nav>
 
       <header className="main-hero">
+        <ul className="icons">
+          <li>
+            <a href="https://www.facebook.com/yazan.widyan/">
+              <FontAwesomeIcon icon={faFacebookSquare} />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/yazan-widyan-863305157/">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Yazanwidyan">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </li>
+        </ul>
         <div className="main-hero-text">
           <div className="content">
             <div className="text-loading-mask">
@@ -145,24 +163,6 @@ const Home = () => {
                 </span>
               </button>
             </div>
-
-            <ul className="icons">
-              <li>
-                <a href="https://www.facebook.com/yazan.widyan/">
-                  <FontAwesomeIcon icon={faFacebookSquare} />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/yazan-widyan-863305157/">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/Yazanwidyan">
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
         <img
@@ -172,6 +172,7 @@ const Home = () => {
             left: "43%",
             width: "20vh",
             opacity: ".7",
+            zIndex: "-8",
           }}
           src={logo}
           alt=""
@@ -285,7 +286,10 @@ const Home = () => {
                   </div>
                   <div className="work-text-section">
                     <div className="project-title"> Erasmus Tab </div>
-                    <div className="project-subtitle"> </div>
+                    <div className="project-subtitle">
+                      {" "}
+                      student exchange program
+                    </div>
                     <button className="the-button">
                       <span className="button-text">View More</span>
                       <span className=" button-icon">
