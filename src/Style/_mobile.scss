@@ -66,7 +66,7 @@
         }
 
         .footer .content {
-            width: 95% !important;
+            width: 100% !important;
 
 
             .footer-copy {
@@ -118,7 +118,7 @@
 
 
         .footer .content {
-            width: 95% !important;
+            width: 100% !important;
 
 
             .footer-copy {
@@ -189,7 +189,7 @@
 
 
         .main-nav .nav-content {
-            width: 95% !important;
+            width: 100% !important;
 
         }
 
@@ -199,7 +199,7 @@
         }
 
         .footer .content {
-            width: 95% !important;
+            width: 100% !important;
 
 
             .footer-copy {
@@ -319,6 +319,383 @@
                     margin-top: 65px;
                 }
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 2560px) {
+
+    .main-hero .main-hero-text .content {
+        padding-left: 150px;
+    }
+
+    .page-wrap .main-nav .nav-content {
+        width: 85%;
+
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+    .main-hero .main-hero-text .content {
+        padding-left: 100px;
+    }
+
+    .page-wrap .main-nav .nav-content {
+        width: 90%;
+
+    }
+
+
+    .work-section .content .work-list li .project {
+        width: 95%;
+        opacity: 1;
+        height: 438px;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+
+    .contact-about .half-contact .contact-info .close-contact {
+
+        right: -127px !important;
+
+
+    }
+
+    .main-hero .main-hero-text .content {
+        padding-left: 50px;
+    }
+
+
+    .title-section {
+
+
+        .projects-title {
+            font-size: 42px;
+            letter-spacing: -2px;
+
+        }
+
+        .projects-subtitle {
+            font-size: 1.4em;
+
+        }
+    }
+
+
+
+    .project-role {
+        font-size: 10px;
+    }
+
+    .project-context {
+        font-size: 10px;
+    }
+
+    .project-period {
+        font-size: 10px;
+    }
+
+
+
+    .projects-desc {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .next-projects {
+        padding: 30px 10px 30px 23px;
+    }
+
+
+    .next-projects {
+        padding: 30px 10px 30px 23px;
+
+        .next-arrow {
+            display: none;
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+
+    .contact-about .half-contact.is-contact .skills-container {
+        padding: 0px 0px 0px 10px;
+
+    }
+
+    .contact-about .half-contact .contact-info .close-contact {
+        right: -41px !important;
+
+
+    }
+
+    .main-hero .main-hero-text .content {
+        padding-left: 0;
+    }
+
+
+    .title-section {
+
+
+        .projects-title {
+            font-size: 34px;
+            letter-spacing: -2px;
+
+        }
+
+        .projects-subtitle {
+            font-size: 1.4em;
+
+        }
+    }
+
+    .projects-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-role {
+        font-size: 12px;
+    }
+
+    .project-context {
+        font-size: 12px;
+    }
+
+    .project-period {
+        font-size: 12px;
+    }
+
+    .desc-title {
+        font-size: 32px;
+
+    }
+
+    .projects-desc {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .next-projects {
+        padding: 30px 10px 30px 23px;
+
+        .next-work {
+            font-size: 26px;
+
+        }
+
+        .next-arrow {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+
+
+    .contact-about .half-contact.is-contact {
+
+        .skills-container {
+            width: 500px;
+            margin: 56px 0px -8px -19px;
+            padding: 0px;
+
+            ul {
+                position: relative;
+
+                .html {
+                    font-size: 24px;
+                    top: 45px;
+                }
+
+                .css {
+                    font-size: 27px;
+                    top: 20px;
+                    left: 7em;
+                }
+
+                .javascript {
+                    font-size: 21px;
+                    left: 9em;
+                    top: 5em;
+                }
+
+                .typescript {
+                    font-size: 19px;
+                    left: 4em;
+                    top: 5em;
+                    opacity: 0.9;
+                }
+
+                .react {
+                    font-size: 30px;
+                    top: 6em;
+                }
+
+                .redux {
+                    font-size: 20px;
+                    right: 14px;
+                    opacity: 0.8;
+                }
+
+                .react-hooks {
+                    font-size: 20px;
+                    top: 13em;
+                    left: 5em;
+                }
+
+                .nodejs {
+                    font-size: 25px;
+                    top: 8em;
+                    left: 9em;
+                }
+
+                .nestjs {
+                    font-size: 10px;
+                    top: 15em;
+                    left: 17em;
+                    opacity: 0.5;
+                }
+
+                .mongodb {
+                    left: 135px;
+                    opacity: 0.6;
+                    font-size: 20px;
+                    top: -38px;
+                }
+
+                .es6 {
+                    top: 71px;
+                    left: 10em;
+                    font-size: 16px;
+                }
+
+                .restful {
+                    top: 4em;
+                    opacity: 0.8;
+                    left: 16em;
+                    font-size: 15px;
+                }
+
+                .bootstrap {
+                    top: 19em;
+                    left: 165px;
+                    opacity: 0.7;
+                }
+
+                .git {
+                    right: 73px;
+                    top: 10em;
+                }
+
+                .sass {
+                    top: 18rem;
+                    right: 7rem;
+                    font-size: 19px;
+                }
+
+
+            }
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: 321px) {
+
+
+    .contact-about .half-contact .contact-info {
+        margin: 0px 0px 0px 133px !important;
+
+    }
+
+    .contact-about .half-contact {
+        width: 100%;
+    }
+
+
+    .main-hero .main-hero-text .text-loading-mask {
+        padding-left: 0px;
+
+    }
+
+    .hero-name {
+        font-size: 10px;
+        width: 254px;
+
+    }
+
+    .sm-heading {
+        font-size: 14px;
+
+    }
+
+    .main-hero .main-hero-text .content {
+        padding-left: 0;
+    }
+
+    .title-section {
+
+
+        .projects-title {
+            font-size: 27px;
+            letter-spacing: -2px;
+
+        }
+
+        .projects-subtitle {
+            font-size: 1em;
+
+        }
+    }
+
+    .projects-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-role {
+        font-size: 10px;
+    }
+
+    .project-context {
+        font-size: 10px;
+    }
+
+    .project-period {
+        font-size: 10px;
+    }
+
+    .desc-title {
+        font-size: 32px;
+
+    }
+
+    .projects-desc {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .next-projects {
+        padding: 30px 10px 30px 23px;
+
+        .next-work {
+            font-size: 26px;
+
+        }
+
+        .next-arrow {
+            display: none;
         }
     }
 }

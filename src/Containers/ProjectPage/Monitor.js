@@ -53,14 +53,14 @@ const Monitor = () => {
     <div className="page-wrap">
       <nav className={visible ? "main-nav" : "main-nav scrolled"}>
         <div className="nav-content">
-          <div className="nav-toggle" onClick={handleMobileOpen}>
+          <div className="nav-toggle2" onClick={handleMobileOpen}>
             <span className="menu-trigger">
               <i className="menu-trigger-bar top"></i>
               <i className="menu-trigger-bar middle"></i>
               <i className="menu-trigger-bar bottom"></i>
             </span>
           </div>
-          <ul className="nav-links">
+          <ul className="nav-links2">
             <li>
               <Link to="/">Turn Back Home</Link>
             </li>

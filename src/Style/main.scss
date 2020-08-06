@@ -192,6 +192,73 @@ body {
   }
 }
 
+.nav-links2 {
+  float: right;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 20px;
+
+  a {
+    display: block;
+    padding: 10px 22px;
+    font-family: "Spartan", sans-serif;
+    position: relative;
+    color: $text-color;
+    transition: color 0.35s ease;
+    font-size: 18px;
+    letter-spacing: -1px;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      @include easeOut();
+
+      &::before {
+        width: 100%;
+        left: 0;
+      }
+
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    &::before {
+      background: #235aa6;
+      transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
+      content: "";
+      position: absolute;
+      bottom: 11px;
+      right: 0;
+      left: auto;
+      width: 0;
+      height: 3px;
+      z-index: 2;
+    }
+
+    &::after {
+      background: $secondary-color;
+      transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1);
+      content: "";
+      position: absolute;
+      bottom: 11px;
+      right: 0;
+      left: auto;
+      width: 0;
+      height: 3px;
+      z-index: 2;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 40px;
+  }
+}
+
+
 .contact-about {
   position: absolute !important;
   -webkit-transform-style: preserve-3d;
