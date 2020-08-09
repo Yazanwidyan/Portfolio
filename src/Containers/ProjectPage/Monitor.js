@@ -7,6 +7,7 @@ const Monitor = () => {
   const [visible, setVisible] = useState(true);
   const [open, setOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [noInfo, setNoInfo] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -47,6 +48,14 @@ const Monitor = () => {
 
     setScroll(currentPos);
     setVisible(visible);
+  };
+
+  const noInfoYet = () => {
+    setNoInfo(true);
+
+    setTimeout(() => {
+      setNoInfo(false);
+    }, 5000);
   };
 
   return (
@@ -125,7 +134,12 @@ const Monitor = () => {
           rebooted for administrative or maintenance purposes.
         </span>
         <a href>
-          <button className="visit-website-btn">
+          <button className="visit-website-btn" onClick={noInfoYet}>
+            {noInfo ? (
+              <div className="no-info">
+                Website is not available yet & the source-code is private
+              </div>
+            ) : null}
             <span className="button-text">Visit Website </span>
             <span className=" button-icon">
               <img className="arrow-logo" src={arrow} alt=""></img>

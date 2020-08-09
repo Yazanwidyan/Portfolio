@@ -356,6 +356,25 @@
 
 }
 
+@media screen and (max-width: 813px) {
+    .title-section {
+
+
+        .projects-title {
+            font-size: 42px;
+            letter-spacing: -2px;
+
+        }
+
+        .projects-subtitle {
+            font-size: 1.4em;
+
+        }
+    }
+
+}
+
+
 @media screen and (max-width: 769px) {
 
     .contact-about .half-contact .contact-info .close-contact {
@@ -388,15 +407,15 @@
 
 
     .project-role {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .project-context {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .project-period {
-        font-size: 10px;
+        font-size: 9px;
     }
 
 
@@ -445,7 +464,7 @@
 
 
         .projects-title {
-            font-size: 34px;
+            font-size: 30px;
             letter-spacing: -2px;
 
         }
@@ -504,8 +523,8 @@
     .contact-about .half-contact.is-contact {
 
         .skills-container {
-            width: 500px;
-            margin: 56px 0px -8px -19px;
+            width: 100%;
+            margin: 56px 0px -10px 0px;
             padding: 0px;
 
             ul {
@@ -665,15 +684,15 @@
     }
 
     .project-role {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .project-context {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .project-period {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .desc-title {

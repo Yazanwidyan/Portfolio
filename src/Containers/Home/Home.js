@@ -307,6 +307,10 @@ const Home = () => {
         <div className={open ? "is-open" : ""}>
           <div className="contact-about">
             <div className="half-contact is-contact">
+              <div className="close-contact" onClick={handleContactOpen}>
+                <span></span>
+                <span></span>
+              </div>
               <div className="giga-text" style={{ right: "-2vh" }}>
                 Skills
               </div>
@@ -331,12 +335,7 @@ const Home = () => {
                 </ul>
               </div>
 
-              <div className="contact-info">
-                <div className="close-contact" onClick={handleContactOpen}>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
+              <div className="contact-info"></div>
             </div>
             <div className="half-contact is-about">
               <div className="giga-text">About</div>
