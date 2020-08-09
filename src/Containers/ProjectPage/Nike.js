@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import arrow from "../../Assets/Images/Untitled-1.png";
+import Fade from "react-reveal/Fade";
 
 const Nike = () => {
   const [scrollPos, setScroll] = useState(window.pageYOffset);
@@ -134,35 +135,45 @@ const Nike = () => {
           className="projects-description"
           style={{ backgroundColor: "rgb(40 179 74)" }}
         >
-          <span className="desc-title">Introduction</span>
-          <span className="projects-desc">
-            Duplicate Nike Website is a website that is similar to nike official
-            website which have many features that could be in most of e-commerce
-            websites.
-          </span>
-          <a href="https://github.com/Yazanwidyan/online-shop-webapp">
-            <button className="visit-website-btn">
-              <span className="button-text">Visit Website </span>
-              <span className=" button-icon">
-                <img className="arrow-logo" src={arrow} alt=""></img>
-              </span>
-              <div className="button-mask"></div>
-            </button>
-          </a>
+          <Fade>
+            <span className="desc-title">Introduction</span>
+          </Fade>
+          <Fade top>
+            <span className="projects-desc">
+              Duplicate Nike Website is a website that is similar to nike
+              official website which have many features that could be in most of
+              e-commerce websites.
+            </span>
+          </Fade>
+          <Fade>
+            <a href="https://github.com/Yazanwidyan/online-shop-webapp">
+              <button className="visit-website-btn">
+                <span className="button-text">Visit Website </span>
+                <span className=" button-icon">
+                  <img className="arrow-logo" src={arrow} alt=""></img>
+                </span>
+                <div className="button-mask"></div>
+              </button>
+            </a>
+          </Fade>
         </div>
         <div
           className="projects-description"
           style={{ backgroundColor: "#f3f3f3" }}
         >
-          <span className="desc-title" style={{ color: "#1c1d25" }}>
-            About this project
-          </span>
-          <span className="projects-desc" style={{ color: "#1c1d25" }}>
-            On this project as a full-stack Developer, I was responsible of
-            building the entire UI for the new website, redefining the User
-            Experience and studying new interactions between the User and the
-            Interface, also building the entire back-end using nodeJS
-          </span>
+          <Fade>
+            <span className="desc-title" style={{ color: "#1c1d25" }}>
+              About this project
+            </span>
+          </Fade>
+          <Fade top>
+            <span className="projects-desc" style={{ color: "#1c1d25" }}>
+              On this project as a full-stack Developer, I was responsible of
+              building the entire UI for the new website, redefining the User
+              Experience and studying new interactions between the User and the
+              Interface, also building the entire back-end using nodeJS
+            </span>
+          </Fade>
         </div>
         <Link to="/monitor">
           <div className="next-projects">

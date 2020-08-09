@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import arrow from "../../Assets/Images/Untitled-1.png";
+import Fade from "react-reveal/Fade";
 
 const Erasmus = () => {
   const [scrollPos, setScroll] = useState(window.pageYOffset);
@@ -144,43 +145,54 @@ const Erasmus = () => {
           className="projects-description"
           style={{ backgroundColor: "rgb(92 125 210)" }}
         >
-          <span className="desc-title">Introduction</span>
-          <span className="projects-desc">
-            Erasmus+ is the EU's programme to support education, training, youth
-            and sport in Europe. Its budget of €14.7 billion will provide
-            opportunities for over 4 million Europeans to study, train, and gain
-            experience abroad. Set to last until 2020, Erasmus+ doesn't just
-            have opportunities for students. Merging seven prior programmes, it
-            has opportunities for a wide variety of individuals and
-            organisations.
-          </span>
-          <a href>
-            <button className="visit-website-btn" onClick={noInfoYet}>
-              {noInfo ? (
-                <div className="no-info">
-                  Website is not available yet & the source-code is private
-                </div>
-              ) : null}
-              <span className="button-text">Visit Website </span>
-              <span className=" button-icon">
-                <img className="arrow-logo" src={arrow} alt=""></img>
-              </span>
-              <div className="button-mask"></div>
-            </button>
-          </a>
+          <Fade>
+            <span className="desc-title">Introduction</span>
+          </Fade>
+          <Fade top>
+            <span className="projects-desc">
+              Erasmus+ is the EU's programme to support education, training,
+              youth and sport in Europe. Its budget of €14.7 billion will
+              provide opportunities for over 4 million Europeans to study,
+              train, and gain experience abroad. Set to last until 2020,
+              Erasmus+ doesn't just have opportunities for students. Merging
+              seven prior programmes, it has opportunities for a wide variety of
+              individuals and organisations.
+            </span>
+          </Fade>
+          <Fade>
+            <a href>
+              <button className="visit-website-btn" onClick={noInfoYet}>
+                {noInfo ? (
+                  <div className="no-info">
+                    Website is not available yet & the source-code is private
+                  </div>
+                ) : null}
+
+                <span className="button-text">Visit Website </span>
+                <span className=" button-icon">
+                  <img className="arrow-logo" src={arrow} alt=""></img>
+                </span>
+                <div className="button-mask"></div>
+              </button>
+            </a>
+          </Fade>
         </div>
         <div
           className="projects-description"
           style={{ backgroundColor: "#f3f3f3" }}
         >
-          <span className="desc-title" style={{ color: "#1c1d25" }}>
-            About this project
-          </span>
-          <span className="projects-desc" style={{ color: "#1c1d25" }}>
-            On this project I was responsible for the initial UI/UX
-            architecture, structure, design and animations. also did the
-            development process from scratch
-          </span>
+          <Fade>
+            <span className="desc-title" style={{ color: "#1c1d25" }}>
+              About this project
+            </span>
+          </Fade>
+          <Fade top>
+            <span className="projects-desc" style={{ color: "#1c1d25" }}>
+              On this project I was responsible for the initial UI/UX
+              architecture, structure, design and animations. also did the
+              development process from scratch
+            </span>
+          </Fade>
         </div>
         <Link to="/layls">
           <div className="next-projects">

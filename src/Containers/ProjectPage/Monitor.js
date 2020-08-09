@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import arrow from "../../Assets/Images/Untitled-1.png";
+import Fade from "react-reveal/Fade";
 
 const Monitor = () => {
   const [scrollPos, setScroll] = useState(window.pageYOffset);
@@ -142,16 +143,21 @@ const Monitor = () => {
           className="projects-description"
           style={{ backgroundColor: "rgb(212 151 25)" }}
         >
-          <span className="desc-title">Introduction</span>
-          <span className="projects-desc">
-            WTM Monitor is a measure of website reliability, expressed as the
-            percentage of time a website, has been working and available. Uptime
-            is the opposite of downtime. Htop adds an exclamation mark when
-            uptime is longer than 100 days It is often used as a measure of
-            website reliability or stability, in that this time represents the
-            time a website can be left unattended without crashing, or needing
-            to be rebooted for administrative or maintenance purposes.
-          </span>
+          <Fade>
+            <span className="desc-title">Introduction</span>
+          </Fade>
+          <Fade top>
+            <span className="projects-desc">
+              WTM Monitor is a measure of website reliability, expressed as the
+              percentage of time a website, has been working and available.
+              Uptime is the opposite of downtime. Htop adds an exclamation mark
+              when uptime is longer than 100 days It is often used as a measure
+              of website reliability or stability, in that this time represents
+              the time a website can be left unattended without crashing, or
+              needing to be rebooted for administrative or maintenance purposes.
+            </span>
+          </Fade>
+
           <a href>
             <button className="visit-website-btn" onClick={noInfoYet}>
               {noInfo ? (
@@ -171,15 +177,19 @@ const Monitor = () => {
           className="projects-description"
           style={{ backgroundColor: "#f3f3f3" }}
         >
-          <span className="desc-title" style={{ color: "#1c1d25" }}>
-            About this project
-          </span>
-          <span className="projects-desc" style={{ color: "#1c1d25" }}>
-            On this project as a full-stack Developer, I was responsible of
-            building the entire UI for the new website, redefining the User
-            Experience and studying new interactions between the User and the
-            Interface, also building the entire back-end using nestJS
-          </span>
+          <Fade>
+            <span className="desc-title" style={{ color: "#1c1d25" }}>
+              About this project
+            </span>
+          </Fade>
+          <Fade top>
+            <span className="projects-desc" style={{ color: "#1c1d25" }}>
+              On this project as a full-stack Developer, I was responsible of
+              building the entire UI for the new website, redefining the User
+              Experience and studying new interactions between the User and the
+              Interface, also building the entire back-end using nestJS
+            </span>
+          </Fade>
         </div>
         <Link to="/erasmus">
           <div className="next-projects">
