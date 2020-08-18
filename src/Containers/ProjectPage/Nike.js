@@ -9,6 +9,7 @@ const Nike = () => {
   const [open, setOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [noInfo, setNoInfo] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -43,6 +44,13 @@ const Nike = () => {
     } else {
       document.body.classList.remove("is-mobile-open");
     }
+  };
+  const noInfoYet = () => {
+    setNoInfo(true);
+
+    setTimeout(() => {
+      setNoInfo(false);
+    }, 5000);
   };
 
   const handleScroll = () => {
@@ -146,8 +154,11 @@ const Nike = () => {
             </span>
           </Fade>
           <Fade>
-            <a href="https://github.com/Yazanwidyan/online-shop-webapp">
-              <button className="visit-website-btn">
+            <a href>
+              <button className="visit-website-btn" onClick={noInfoYet}>
+                {noInfo ? (
+                  <div className="no-info">Website is not available yet</div>
+                ) : null}{" "}
                 <span className="button-text">Visit Website </span>
                 <span className=" button-icon">
                   <img className="arrow-logo" src={arrow} alt=""></img>
@@ -173,6 +184,17 @@ const Nike = () => {
               Experience and studying new interactions between the User and the
               Interface, also building the entire back-end using nodeJS
             </span>
+          </Fade>
+          <Fade>
+            <a href="https://github.com/Yazanwidyan/online-shop-webapp">
+              <button className="visit-website-btn">
+                <span className="button-text2">Source code </span>
+                <span className=" button-icon">
+                  <img className="arrow-logo" src={arrow} alt=""></img>
+                </span>
+                <div className="button-mask"></div>
+              </button>
+            </a>
           </Fade>
         </div>
         <Link to="/monitor">
