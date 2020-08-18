@@ -163,9 +163,7 @@ const Erasmus = () => {
             <a href>
               <button className="visit-website-btn" onClick={noInfoYet}>
                 {noInfo ? (
-                  <div className="no-info">
-                    Website is not available yet & the source-code is private
-                  </div>
+                  <div className="no-info">Website is not available yet</div>
                 ) : null}
 
                 <span className="button-text">Visit Website </span>
@@ -193,12 +191,27 @@ const Erasmus = () => {
               development process from scratch
             </span>
           </Fade>
+          <Fade>
+            <a href>
+              <button className="visit-website-btn" onClick={noInfoYet}>
+                {noInfo ? (
+                  <div className="no-info">the source-code is private</div>
+                ) : null}
+                <span className="button-text2">Source code </span>
+                <span className=" button-icon">
+                  <img className="arrow-logo" src={arrow} alt=""></img>
+                </span>
+                <div className="button-mask"></div>
+              </button>
+            </a>
+          </Fade>
         </div>
-        <Link to="/layls">
+
+        <Link to="/slack">
           <div className="next-projects">
             <span className="next-work-title">Next Work</span>
             <div className="next-work">
-              Layls Website
+              Slack-clone
               <img className="next-arrow" src={arrow} alt="dd" />
             </div>
           </div>
