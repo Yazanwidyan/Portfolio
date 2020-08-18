@@ -19,7 +19,7 @@ const Monitor = () => {
     window.scrollTo(0, 0);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
   }, []);
 
   const handleContactOpen = () => {

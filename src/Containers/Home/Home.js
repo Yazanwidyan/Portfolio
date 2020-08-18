@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Card from "../../Components/Parallax/Parallax";
 import arrow from "../../Assets/Images/Untitled-1.png";
-import logo from "../../Assets/Images/ddd.png";
+// import logo from "../../Assets/Images/ddd.png";
 import { Link } from "react-router-dom";
 // import logo2 from "../../Assets/Images/Logo.png";
 
@@ -72,22 +72,33 @@ const Home = () => {
               <i className="menu-trigger-bar bottom"></i>
             </span>
           </div>
+
           <ul className="nav-links">
-            <li>
-              <a onClick={scrollDownHandler} href>
-                Projects
-              </a>
-            </li>
-            <li>
-              <a onClick={handleContactOpen} href>
-                Skills
-              </a>
-            </li>
-            <li>
-              <a onClick={handleContactOpen} href>
-                Contact
-              </a>
-            </li>
+            <div className="nav-links__left">
+              <li className="my-logo">YAZAN WIDYAN</li>
+            </div>
+            <div className="nav-links__middle">
+              <div className="number">+962795382171</div>
+              <span>/</span>
+              <div className="email">yazanwidyan07@gmail.com</div>
+            </div>
+            <div className="nav-links__right">
+              <li>
+                <a onClick={scrollDownHandler} href>
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a onClick={handleContactOpen} href>
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a onClick={handleContactOpen} href>
+                  Contact
+                </a>
+              </li>{" "}
+            </div>
           </ul>
         </div>
       </nav>
@@ -135,23 +146,9 @@ const Home = () => {
         </ul>
         <div className="main-hero-text">
           <div className="content">
-            <div className="text-loading-mask">
-              <div className="hero-name">
-                <h1 className="lg-head">Y</h1>
-                <h1 className="lg-head">a</h1>
-                <h1 className="lg-head">z</h1>
-                <h1 className="lg-head">a</h1>
-                <h1 className="lg-head">n</h1>
-                <h1 className="lg-head">W</h1>
-                <h1 className="lg-head">i</h1>
-                <h1 className="lg-head">d</h1>
-                <h1 className="lg-head">y</h1>
-                <h1 className="lg-head">a</h1>
-                <h1 className="lg-head">n</h1>
-              </div>
-            </div>
-            <div className="text-loading-mask-2">
-              <h3 className="sm-heading"> Interactive Front-end Developer </h3>
+            <div className="hero-name">
+              <div className="sm-heading">Yazan Widyan</div>
+              <h1 className="lg-head">I'm Interactive Web Developer </h1>
             </div>
 
             <div className="text-loading-mask-3">
@@ -165,18 +162,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img
-          style={{
-            position: "absolute",
-            top: "28%",
-            left: "43%",
-            width: "20vh",
-            opacity: ".7",
-            zIndex: "-8",
-          }}
-          src={logo}
-          alt=""
-        ></img>
+
         <Card />
 
         <div onClick={scrollDownHandler} className="go-next-works">
