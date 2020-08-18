@@ -5,6 +5,7 @@ import Layls from "./Containers/ProjectPage/Layls";
 import Nike from "./Containers/ProjectPage/Nike";
 import Monitor from "./Containers/ProjectPage/Monitor";
 import Erasmus from "./Containers/ProjectPage/Erasmus";
+import Slack from "./Containers/ProjectPage/Slack";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/layls" component={Layls} />
             <Route path="/monitor" component={Monitor} />
             <Route path="/erasmus" component={Erasmus} />
+            <Route path="/slack" component={Slack} />
           </div>
         </React.Fragment>
       </Switch>

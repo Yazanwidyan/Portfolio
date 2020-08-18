@@ -1327,6 +1327,12 @@ main {
           background-size: cover;
         }
 
+        #project5 {
+          background: url("../Assets/Images/slack-features.jpg");
+          background-size: cover;
+        }
+
+
 
         .project:hover .project-mask::after {
           transform: translateX(0%);
@@ -1677,6 +1683,17 @@ main {
       width: 37px;
     }
   }
+
+  .button-text2 {
+    @include easeOut();
+
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 10;
+    font-family: "spartan";
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
 }
 
 .footer {
@@ -1823,6 +1840,28 @@ main {
     animation-name: mymove;
     animation-duration: 2s;
     background-color: #333333;
+  }
+}
+
+.loading-screen5 {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #3f0f40;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    animation-name: mymove;
+    animation-duration: 2s;
+    background-color: rgb(214, 214, 214);
   }
 }
 
@@ -1978,6 +2017,18 @@ main {
   background: url(../Assets/Images/advantges1@3x.png) no-repeat center center;
 }
 
+.projects-header5 {
+  color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-size: cover !important;
+  background: url(../Assets/Images/slack-features.jpg) no-repeat center center;
+}
+
 .projects-header::before {
 
   content: "";
@@ -2018,6 +2069,15 @@ main {
 
 }
 
+.projects-header5::before {
+
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
 
 
 .title-section {

@@ -182,6 +182,17 @@ const Layls = () => {
               Interface, also added the Arabic version
             </span>
           </Fade>
+          <Fade>
+            <a href="https://github.com/QaysTrad/layls-WebSite">
+              <button className="visit-website-btn">
+                <span className="button-text2">Source code </span>
+                <span className=" button-icon">
+                  <img className="arrow-logo" src={arrow} alt=""></img>
+                </span>
+                <div className="button-mask"></div>
+              </button>
+            </a>
+          </Fade>
         </div>
         <Link to="/nike">
           <div className="next-projects">

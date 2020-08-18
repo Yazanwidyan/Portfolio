@@ -286,6 +286,33 @@ const Home = () => {
                   </div>
                 </Link>
               </li>
+              <li className="project1-li">
+                <Link id="project5" to="/slack" className="project">
+                  <div className="project-mask"> </div>
+                  <div id="project-number-1" className="project-mask-number">
+                    <div className="project-mask-back"> 05 </div>
+                    <div className="project-mask-front">
+                      <div data-index="05" className="project-mask-overlay">
+                        05
+                      </div>
+                    </div>
+                  </div>
+                  <div className="work-text-section">
+                    <div className="project-title"> Slack-clone </div>
+                    <div className="project-subtitle">
+                      {" "}
+                      business communication platform
+                    </div>
+                    <button className="the-button">
+                      <span className="button-text">View More</span>
+                      <span className=" button-icon">
+                        <img className="arrow-logo" src={arrow} alt=""></img>
+                      </span>
+                      <div className="button-mask"></div>
+                    </button>
+                  </div>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
