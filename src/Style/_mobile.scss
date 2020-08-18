@@ -61,9 +61,7 @@
         }
 
 
-        .main-nav .nav-content {
-            width: 842px !important;
-        }
+
 
         .footer .content {
             width: 100% !important;
@@ -188,13 +186,10 @@
         }
 
 
-        .main-nav .nav-content {
-            width: 100% !important;
 
-        }
 
         .main-nav .nav-links {
-            display: none;
+            display: none !important;
 
         }
 
@@ -327,13 +322,10 @@
 @media screen and (max-width: 2560px) {
 
     .main-hero .main-hero-text .content {
-        padding-left: 150px;
+        padding-left: 210px;
     }
 
-    .page-wrap .main-nav .nav-content {
-        width: 85%;
 
-    }
 }
 
 @media screen and (max-width: 1025px) {
@@ -342,10 +334,6 @@
         padding-left: 100px;
     }
 
-    .page-wrap .main-nav .nav-content {
-        width: 90%;
-
-    }
 
 
     .work-section .content .work-list li .project {
@@ -384,9 +372,16 @@
 
     }
 
-    .main-hero .main-hero-text .content {
-        padding-left: 50px;
+    .main-hero {
+
+        height: 70vh;
+
+        .main-hero-text .content {
+            padding-left: 50px;
+        }
     }
+
+
 
 
     .title-section {
