@@ -18,6 +18,7 @@ body {
 .lg-heading {
   font-size: 3.9975843648em;
   margin-bottom: 0;
+  line-height: 100px;
   font-family: "spartan";
   letter-spacing: -6px;
   margin-top: 0;
@@ -70,24 +71,22 @@ body {
 
 .hero-name {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  width: 490px;
+  width: 650px;
   font-size: 19px;
   position: relative;
 
 
   .lg-head {
     color: $hero-color;
-    text-align: center;
-    font-size: 3.9975843648em;
+    font-size: 85px;
     margin-bottom: 0;
     font-family: "spartan";
-    letter-spacing: -6px;
+    letter-spacing: -4px;
     margin-top: 0;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    transition: all 0.3s ease-out;
+    line-height: 110px;
+
   }
 }
 
@@ -148,11 +147,10 @@ body {
 }
 
 .sm-heading {
-  font-family: "Libre Baskerville", serif;
-  font-style: italic;
+  font-family: "spartan";
   font-weight: 500;
   font-size: 19px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   margin-top: 3px;
   width: 295px;
   position: relative;
@@ -202,6 +200,7 @@ body {
   a {
     display: block;
     padding: 10px 0px;
+    margin-right: 60px;
     font-family: "Spartan", sans-serif;
     position: relative;
     color: $text-color;
@@ -555,7 +554,7 @@ body {
 
   .main-nav {
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     will-change: transform;
@@ -566,8 +565,7 @@ body {
     z-index: 25;
 
     .nav-content {
-      width: 1170px;
-      margin: 0 auto;
+
 
       .nav-toggle {
         display: none;
@@ -605,6 +603,35 @@ body {
       }
     }
 
+    .nav-links__left {
+      flex: 0.7;
+      color: white;
+      font-size: 20px;
+      font-family: 'spartan';
+    }
+
+    .nav-links__middle {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      color: white;
+      opacity: .9;
+      font-size: 16px;
+
+      span {
+        opacity: 0.5;
+        font-size: 15px;
+      }
+
+      .number {
+        margin-right: 20px;
+      }
+
+      .email {
+        margin-left: 20px;
+      }
+    }
+
     .logo {
       margin-top: 18px;
       width: 9vh;
@@ -612,9 +639,12 @@ body {
 
     .nav-links {
       float: right;
+      display: flex;
+      align-items: center;
+      padding: 15px 60px;
       position: relative;
       margin: 0;
-      padding: 0;
+      width: 100%;
       top: 20px;
 
       a {
@@ -673,6 +703,10 @@ body {
       li {
         display: inline-block;
         margin-left: 40px;
+      }
+
+      .my-logo {
+        margin-left: 0;
       }
     }
   }
@@ -909,7 +943,7 @@ body {
     .text-loading-mask-3 {
       position: relative;
       padding-top: 0px;
-      padding-left: 21px;
+      margin-top: 30px;
       padding-right: 52px;
       overflow: hidden;
       transition: all 0.2s ease;
