@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <React.Fragment>
+        <>
           <div className="App">
             <Route exact path="/" component={Home} />
             <Route path="/nike" component={Nike} />
@@ -20,7 +20,7 @@ function App() {
             <Route path="/erasmus" component={Erasmus} />
             <Route path="/slack" component={Slack} />
           </div>
-        </React.Fragment>
+        </>
       </Switch>
     </Router>
   );
