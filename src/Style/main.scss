@@ -1641,10 +1641,8 @@ main {
   &:hover {
     background-color: white;
     @include easeOut();
-    cursor: pointer;
 
-
-    .button-text {
+    cursor: pointer .button-text {
       @include easeOut();
       color: black;
     }
