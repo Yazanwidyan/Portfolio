@@ -1646,7 +1646,7 @@ main {
 
     .button-text {
       @include easeOut();
-      color: black
+      color: black;
     }
 
     .button-icon {
