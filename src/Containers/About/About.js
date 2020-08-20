@@ -38,7 +38,7 @@ const About = () => {
             </li>
             <li className={`nav-item ${show ? "show" : ""}`}>
               <a href="/contact" className="nav-link">
-                How to reach me
+                How to reach m
               </a>
             </li>
           </ul>
