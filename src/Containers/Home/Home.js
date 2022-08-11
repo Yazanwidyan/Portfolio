@@ -6,10 +6,7 @@ import {
   faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import Card from "../../Components/Parallax/Parallax";
-import arrow from "../../Assets/Images/Untitled-1.png";
-// import logo from "../../Assets/Images/ddd.png";
-import { Link } from "react-router-dom";
-// import logo2 from "../../Assets/Images/Logo.png";
+import ProjectCard from "../../Components/Projects/ProjectCard";
 
 const Home = () => {
   const [scrollPos, setScroll] = useState(window.pageYOffset);
@@ -35,7 +32,6 @@ const Home = () => {
     } else {
       document.body.classList.remove("is-open");
     }
-    window.scrollTo(500, 0);
   };
 
   const handleMobileOpen = () => {
@@ -147,18 +143,7 @@ const Home = () => {
         <div className="main-hero-text">
           <div className="content">
             <div className="hero-name">
-              <div className="sm-heading">Yazan Widyan</div>
-              <h1 className="lg-head">I'm Interactive Web Developer </h1>
-            </div>
-
-            <div className="text-loading-mask-3">
-              <button className="the-button" onClick={handleContactOpen}>
-                <span className="button-text">About Me</span>
-                <div className="button-mask"></div>
-                <span className=" button-icon">
-                  <img className="arrow-logo" src={arrow} alt=""></img>
-                </span>
-              </button>
+              <h1 className="lg-head">I'm React & React Native Developer </h1>
             </div>
           </div>
         </div>
@@ -170,153 +155,59 @@ const Home = () => {
           <span className="the-arrow"></span>
         </div>
       </header>
-      <div className="main" id="main1">
+      <div className="main">
         <div className="work-section">
           <div className="content">
-            <h4 className="work-title">CASE STUDIES </h4>
+            <h4 className="work-title" id="main1">
+              CASE STUDIES{" "}
+            </h4>
             <h2 className="work-subtitle"> Latest Works </h2>
             <ul className="work-list">
-              <li className="project1-li">
-                <Link id="project1" to="/layls" className="project">
-                  <div className="project-mask"> </div>
-                  <div id="project-number-1" className="project-mask-number">
-                    <div className="project-mask-back"> 01 </div>
-                    <div className="project-mask-front">
-                      <div data-index="01" className="project-mask-overlay">
-                        01
-                      </div>
-                    </div>
-                  </div>
-                  <div className="work-text-section">
-                    <div className="project-title"> Layls Website </div>
-                    <div className="project-subtitle">
-                      Dresses and Clothes Website{" "}
-                    </div>
-                    <button className="the-button">
-                      <span className="button-text">View More </span>
-                      <span className=" button-icon">
-                        <img className="arrow-logo" src={arrow} alt=""></img>
-                      </span>
-                      <div className="button-mask"></div>
-                    </button>
-                  </div>
-                </Link>
-              </li>
-              <li className="project2-li">
-                <Link id="project2" to="/nike" className="project">
-                  <div className="project-mask"> </div>
-                  <div id="project-number-2" className="project-mask-number">
-                    <div className="project-mask-back"> 02 </div>
-                    <div className="project-mask-front">
-                      <div data-index="02" className="project-mask-overlay">
-                        02
-                      </div>
-                    </div>
-                  </div>
-                  <div className="work-text-section">
-                    <div className="project-title">
-                      {" "}
-                      Duplicate Nike Website{" "}
-                    </div>
-                    <div className="project-subtitle">
-                      {" "}
-                      Amazing Multifunctioning Website{" "}
-                    </div>
-                    <button className="the-button">
-                      <span className="button-text">View More</span>
-                      <span className=" button-icon">
-                        <img className="arrow-logo" src={arrow} alt=""></img>
-                      </span>
-                      <div className="button-mask"></div>
-                    </button>
-                  </div>
-                </Link>
-              </li>
-              <li className="project1-li">
-                <Link id="project3" to="/monitor" className="project">
-                  <div className="project-mask"> </div>
-                  <div id="project-number-1" className="project-mask-number">
-                    <div className="project-mask-back"> 03 </div>
-                    <div className="project-mask-front">
-                      <div data-index="03" className="project-mask-overlay">
-                        03
-                      </div>
-                    </div>
-                  </div>
-                  <div className="work-text-section">
-                    <div className="project-title"> WTM Monitor </div>
-                    <div className="project-subtitle">
-                      {" "}
-                      Monitoring service Website{" "}
-                    </div>
-                    <button className="the-button">
-                      <span className="button-text">View More</span>
-                      <span className=" button-icon">
-                        <img className="arrow-logo" src={arrow} alt=""></img>
-                      </span>
-                      <div className="button-mask"></div>
-                    </button>
-                  </div>
-                </Link>
-              </li>
-              <li className="project2-li">
-                <Link id="project4" to="/erasmus" className="project">
-                  <div className="project-mask"> </div>
-                  <div id="project-number-2" className="project-mask-number">
-                    <div className="project-mask-back"> 04 </div>
-                    <div className="project-mask-front">
-                      <div data-index="04" className="project-mask-overlay">
-                        04
-                      </div>
-                    </div>
-                  </div>
-                  <div className="work-text-section">
-                    <div className="project-title"> Erasmus Tab </div>
-                    <div className="project-subtitle">
-                      {" "}
-                      student exchange program
-                    </div>
-                    <button className="the-button">
-                      <span className="button-text">View More</span>
-                      <span className=" button-icon">
-                        <img className="arrow-logo" src={arrow} alt=""></img>
-                      </span>
-                      <div className="button-mask"></div>
-                    </button>
-                  </div>
-                </Link>
-              </li>
-              <li className="project1-li">
-                <Link id="project5" to="/slack" className="project">
-                  <div className="project-mask"> </div>
-                  <div id="project-number-1" className="project-mask-number">
-                    <div className="project-mask-back"> 05 </div>
-                    <div className="project-mask-front">
-                      <div data-index="05" className="project-mask-overlay">
-                        05
-                      </div>
-                    </div>
-                  </div>
-                  <div className="work-text-section">
-                    <div className="project-title"> Slack-clone </div>
-                    <div className="project-subtitle">
-                      {" "}
-                      business communication platform
-                    </div>
-                    <button className="the-button">
-                      <span className="button-text">View More</span>
-                      <span className=" button-icon">
-                        <img className="arrow-logo" src={arrow} alt=""></img>
-                      </span>
-                      <div className="button-mask"></div>
-                    </button>
-                  </div>
-                </Link>
-              </li>
+              <div style={{ display: "flex" }}>
+                <div style={{ width: "100%" }}>
+                  <ProjectCard
+                    No={"1"}
+                    link={"/tab3"}
+                    title={"Tab3"}
+                    desc={"Application for sales representatives"}
+                  />
+                  <ProjectCard
+                    No={"3"}
+                    link={"/monitor"}
+                    title={"WTM Monitor"}
+                    desc={"Monitoring service Website"}
+                  />
+                  <ProjectCard
+                    No={"5"}
+                    link={"/newProject"}
+                    title={"New Project"}
+                    desc={"Msssss"}
+                  />
+                </div>
+                <div style={{ width: "100%" }}>
+                  <ProjectCard
+                    No={"2"}
+                    link={"/erasmus"}
+                    title={"Erasmus Tab"}
+                    desc={"student exchange program"}
+                  />
+                  <ProjectCard
+                    No={"4"}
+                    link={"/layls"}
+                    title={"Layls Website"}
+                    desc={" Dresses and Clothes Website"}
+                  />
+                  <ProjectCard
+                    No={"6"}
+                    link={"/layls"}
+                    title={"Layls Website"}
+                    desc={" Dresses and Clothes Website"}
+                  />
+                </div>
+              </div>
             </ul>
           </div>
         </div>
-
         <div className={open ? "is-open" : ""}>
           <div className="contact-about">
             <div className="half-contact is-contact">
@@ -389,29 +280,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <footer className="footer">
-        <div className="content">
-          <div className="inner-container">
-            <ul className="footer-links">
-              <li>
-                <a href="https://www.linkedin.com/in/yazan-widyan-863305157/">
-                  Linkedin
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/Yazanwidyan">Github</a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/yazan.widyan/">Facebook</a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-copy">
-            &copy; 2020 Yazan Widyan - <a href="!#">contact</a>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };

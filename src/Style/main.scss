@@ -6,6 +6,19 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: #656565;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(124, 124, 124);
+}
+
 body {
   background: #f3f3f3;
   height: 100%;
@@ -188,6 +201,31 @@ body {
       visibility: hidden;
     }
   }
+}
+
+.rec-dot {
+  background-color: rgba(157, 157, 157, 0.5) !important;
+  box-shadow: unset !important;
+}
+
+.rec-dot_active {
+  background-color: rgba(157, 157, 157, 0.5) !important;
+  box-shadow: 0 0 1px 3px rgba(165, 165, 165, 0.5) !important;
+}
+
+
+.rec-arrow {
+  box-shadow: unset !important;
+}
+
+.rec-arrow:hover {
+
+  background-color: #727272 !important;
+}
+
+.rec-arrow:focus {
+
+  background-color: #727272 !important;
 }
 
 .nav-links2 {
@@ -905,6 +943,7 @@ body {
   z-index: 2;
 
   .main-hero-text {
+
     position: absolute;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -914,7 +953,7 @@ body {
     left: 0;
     color: #fff;
     transition: color 0.3s ease, opacity 0.3s ease 0.65s;
-    z-index: 7;
+    z-index: -8;
 
     .content {
       padding-left: 188px;
@@ -1262,8 +1301,120 @@ main {
   color: #333;
 }
 
+
+.loading-screen1 {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #0C1126;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    animation-name: mymove;
+    animation-duration: 2s;
+    background-color: #35275B;
+  }
+}
+
+.loading-screen2 {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #464A58;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    animation-name: mymove;
+    animation-duration: 2s;
+    background-color: #FFF687;
+  }
+}
+
+.loading-screen3 {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #171536;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    animation-name: mymove;
+    animation-duration: 2s;
+    background-color: #D49719;
+  }
+}
+
+.loading-screen4 {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(128, 27, 27);
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    animation-name: mymove;
+    animation-duration: 2s;
+    background-color: #e1e0ce;
+  }
+}
+
+.loading-screen5 {
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(46, 157, 57);
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    animation-name: mymove;
+    animation-duration: 2s;
+    background-color: #e1e0ce;
+  }
+}
+
+
 .work-section {
-  padding: 80px 0;
+  padding: 20px 0;
   position: relative;
   width: 100%;
   display: block;
@@ -1283,7 +1434,6 @@ main {
 
     .work-subtitle {
       text-align: center;
-      margin-bottom: 70px;
       font-family: "spartan";
       margin-top: 11px;
       font-size: 2rem;
@@ -1295,43 +1445,43 @@ main {
       padding: 0;
       margin: 0;
 
-      .project1-li {
-        margin: 50px 10px 100px 80px;
-      }
-
-      .project2-li {
-        margin: 50px 80px 100px 10px;
-      }
-
       li {
-        margin-bottom: 135px;
         list-style: none;
 
         #project1 {
-          background: url("../Assets/Images/sdsd.png");
+          background: url("../Assets/Images/tab3.png");
           background-size: cover;
+          border-radius: 10px;
         }
 
+
         #project2 {
-          background: url("../Assets/Images/PROJECT-2.png");
+          background: url("../Assets/Images/advantges1.png");
           background-size: cover;
+          border-radius: 10px;
+
         }
 
         #project3 {
           background: url("../Assets/Images/dd.png");
           background-size: cover;
+          border-radius: 10px;
+
         }
 
         #project4 {
-          background: url("../Assets/Images/advantges1.png");
+          background: url("../Assets/Images/reddress-1596726619597-7020.jpg");
           background-size: cover;
+          border-radius: 10px;
+
         }
 
         #project5 {
-          background: url("../Assets/Images/slack-features.jpg");
+          background: url("../Assets/Images/reddress-1596726619597-7020.jpg");
           background-size: cover;
-        }
+          border-radius: 10px;
 
+        }
 
 
         .project:hover .project-mask::after {
@@ -1365,15 +1515,15 @@ main {
         }
 
         .project {
+          border-radius: 10px;
+          margin-top: 30px;
+          margin-bottom: 60px;
           display: block;
-          width: 100%;
-          height: 100%;
-          width: 70%;
+          width: 90%;
+          height: 300px;
           opacity: 1;
-          height: 530px;
           background-color: #1c1d25;
           position: relative;
-          box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
           margin-left: auto;
           margin-right: auto;
           background-position: 50%;
@@ -1382,6 +1532,7 @@ main {
           transition: all 0.35s ease;
 
           &::before {
+            border-radius: 10px;
             position: absolute;
             left: 0;
             top: 0;
@@ -1396,6 +1547,7 @@ main {
           }
 
           .project-mask {
+            border-radius: 10px;
             position: absolute;
             top: 0;
             left: 0;
@@ -1430,6 +1582,7 @@ main {
           }
 
           .work-text-section {
+            margin: -22px;
             position: absolute;
             left: 110px;
             bottom: 90px;
@@ -1442,7 +1595,7 @@ main {
             transition-delay: 0.4s;
 
             .project-title {
-              font-size: 2.827145944em;
+              font-size: 1.827145944em;
               line-height: 1.0611408323;
               font-family: "Mukta", sans-serif;
             }
@@ -1540,12 +1693,12 @@ main {
         }
       }
 
-      #project-number-1 {
+      #project-number-right {
         top: -110px;
         right: -67px;
       }
 
-      #project-number-2 {
+      #project-number-left {
         top: -110px;
         left: -30px;
       }
@@ -1750,121 +1903,6 @@ main {
   }
 }
 
-.loading-screen {
-  position: absolute;
-  z-index: 100;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #C62B2E;
-
-  span {
-    font-size: 50px;
-    text-align: center;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    animation-name: mymove;
-    animation-duration: 2s;
-    background-color: #CC9966;
-  }
-}
-
-.loading-screen2 {
-  position: absolute;
-  z-index: 100;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgb(41, 168, 73);
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    animation-name: mymove;
-    animation-duration: 2s;
-    background-color: #d1c521;
-  }
-}
-
-.loading-screen3 {
-  position: absolute;
-  z-index: 100;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #171536;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    animation-name: mymove;
-    animation-duration: 2s;
-    background-color: #D49719;
-  }
-}
-
-.loading-screen4 {
-  position: absolute;
-  z-index: 100;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #0069a6;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    animation-name: mymove;
-    animation-duration: 2s;
-    background-color: #333333;
-  }
-}
-
-.loading-screen5 {
-  position: absolute;
-  z-index: 100;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #3f0f40;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    animation-name: mymove;
-    animation-duration: 2s;
-    background-color: rgb(214, 214, 214);
-  }
-}
-
 @keyframes mymove {
   to {
     left: 100%;
@@ -1969,7 +2007,8 @@ main {
   background: darken($primary-color, 10);
 }
 
-.projects-header {
+
+.projects-header1 {
   color: white;
   display: flex;
   position: relative;
@@ -1978,10 +2017,11 @@ main {
   align-items: center;
   height: 90vh;
   background-size: cover !important;
-  background: url(../Assets/Images/reddress-1596726619597-7020.jpg) no-repeat 50% 10%;
+  background: url(../Assets/Images/tab3.png) no-repeat center center;
 }
 
 .projects-header2 {
+
   color: white;
   display: flex;
   position: relative;
@@ -1990,7 +2030,7 @@ main {
   align-items: center;
   height: 90vh;
   background-size: cover !important;
-  background: url(../Assets/Images/RAVE-Review-BestNikeRunningShoes-Body3.jpg) no-repeat center center;
+  background: url(../Assets/Images/advantges1@3x.png) no-repeat center center;
 }
 
 .projects-header3 {
@@ -2014,7 +2054,7 @@ main {
   align-items: center;
   height: 90vh;
   background-size: cover !important;
-  background: url(../Assets/Images/advantges1@3x.png) no-repeat center center;
+  background: url(../Assets/Images/reddress-1596726619597-7020.jpg) no-repeat 50% 10%;
 }
 
 .projects-header5 {
@@ -2026,10 +2066,13 @@ main {
   align-items: center;
   height: 90vh;
   background-size: cover !important;
-  background: url(../Assets/Images/slack-features.jpg) no-repeat center center;
+  background: url(../Assets/Images/reddress-1596726619597-7020.jpg) no-repeat 50% 10%;
 }
 
-.projects-header::before {
+
+
+
+.projects-header1::before {
 
   content: "";
   position: absolute;
@@ -2078,7 +2121,6 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
 
 }
-
 
 .title-section {
   display: flex;

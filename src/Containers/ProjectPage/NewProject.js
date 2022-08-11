@@ -1,13 +1,13 @@
 import React from "react";
 import ProjectDetails from "../../Components/Projects/ProjectDetails";
 
-const Monitor = () => {
+const NewProject = () => {
   return (
     <>
       <ProjectDetails
-        NO={3}
-        title={"WTM Monitor"}
-        desc={"Monitoring service Website"}
+        NO={5}
+        title={"New project"}
+        desc={"mssss"}
         context={" Website design & development"}
         Period={"end 2020"}
         PrimaryColor={"#775316"}
@@ -22,4 +22,4 @@ const Monitor = () => {
     </>
   );
 };
-export default Monitor;
+export default NewProject;
